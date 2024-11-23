@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd39d49938cb42da81d701128b842e0, type: 3}
+  m_Name: SituationPropose
+  m_EditorClassIdentifier: 
+  situationName: "\uD504\uB7EC\uD3EC\uC988 \uC778\uC0DD\uC874\uB9DD"
+  situationThumbnail: {fileID: 0}
+  episodeDatas:
+  - {fileID: 11400000, guid: c2689adfab57d40d6876b3da2c8a16bb, type: 2}
+  - {fileID: 11400000, guid: 8d47eda024b114795923da94a4d7026a, type: 2}
+  - {fileID: 11400000, guid: 493714d3743c04be2ace4ac47d532e9b, type: 2}

@@ -29,7 +29,7 @@ public class GameManager : MonoSingleton<GameManager>
         TextManager.Instance.InitManager();
     }
 
-    public async Task LoadSceneWithFade(Scenes nextScene, Action callback = null)
+    public async void LoadSceneWithFade<T>(Scenes nextScene, Action<T> callback = null) where T : BaseScene
     {
         int sceneIndex = (int)nextScene;
         if(_scenes.Count <= sceneIndex || sceneIndex < 0)
@@ -48,8 +48,11 @@ public class GameManager : MonoSingleton<GameManager>
         await ShowBlackAsync(false);
 
         _currentScene.Initialize();
-        callback?.Invoke();
+        callback?.Invoke(_currentScene as T);
     }
+
+    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> callback = null)
+        => LoadSceneWithFade<BaseScene>(nextScene, callback);
     
     public async Task ShowBlackAsync(bool value)
     {
