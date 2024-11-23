@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class EpisodeSlotUI : MonoBehaviourUI
 {
-    [SerializeField] GameObject dimedObject = null;
+    [SerializeField] GameObject[] dimedObject = null;
     [SerializeField] Image thumbnailImage = null;
-    [SerializeField] Text titleText = null;
+    public Text title = null;
     
     private EpisodeDataSO currentEpisodeData = null;
+    
+    public bool IsEnable { get; private set; }
 
     public void Initialize(EpisodeDataSO episodeData)
     {
@@ -17,13 +20,17 @@ public class EpisodeSlotUI : MonoBehaviourUI
 
     public void SetEnable(bool enable)
     {
-        dimedObject.SetActive(!enable);
+        IsEnable = enable;
+        foreach (var obj in dimedObject)
+        {
+            obj.SetActive(enable);
+        }
     }
 
     private void RefreshUI()
     {
         thumbnailImage.sprite = currentEpisodeData.episodeThumbnail;
-        titleText.text = currentEpisodeData.episodeName;
+        title.text = currentEpisodeData.episodeName;
     }
 
     public void OnTouchStartEpisode()
