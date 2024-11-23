@@ -17,14 +17,15 @@ public class SituationScene : BaseScene
         sceneUI.SetActive(false);
         backgroundImage.sprite = situationData.situationThumbnail;
 
-        if(DataManager.UserData.ProgressData.CurrentEpisodeIndex != 0)
+        int currentEpisodeIndex = DataManager.UserData.ProgressData.CurrentEpisodeIndex;
+        if(currentEpisodeIndex == 0 || currentEpisodeIndex >= currentSituationData.episodeDatas.Count)
         {
-            SetSituationUI();
+            Cutscene cutscene = Instantiate(currentSituationData.cutscenePrefabs[currentEpisodeIndex != 0]);
+            cutscene.Play(OnFinishCutscene);
             return;
         }
 
-        Cutscene cutscene = Instantiate(currentSituationData.cutscenePrefab);
-        cutscene.Play(OnFinishCutscene);
+        SetSituationUI();
     }
 
     private void OnFinishCutscene(Cutscene cutscene)
