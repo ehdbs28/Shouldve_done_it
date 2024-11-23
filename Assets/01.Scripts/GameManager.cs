@@ -53,7 +53,8 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
-
+        _currentScene.OnPreLoadScene();
+        
         yield return StartCoroutine(ShowBlackAsync(false));
 
         _currentScene.Initialize();

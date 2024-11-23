@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 6913722526479112592}
+  canvasGroup: {fileID: 6294588657808541603}
 --- !u!1 &6254696908486560604
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +207,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 479090aa841554a9bb5222a27c5e87d9, type: 3}
-    m_FontSize: 70
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -217,5 +218,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.2
-  m_Text: "\uADF8\uB140\uC640 \uB9CC\uB09C\uC9C0 \uC5BC\uB9C8 \uB418\uC9C0 \uC54A\uC558\uC744
-    \uB54C\n\uCE74\uD398\uC5D0\uC11C.."
+  m_Text: "\uADF8\uB140\uC640 \uB9CC\uB09C\uC9C0 \uC5BC\uB9C8 \uB418\uC9C0 \uC54A\uB358
+    \uB0A0\n\uCE74\uD398\uC5D0\uC11C..."

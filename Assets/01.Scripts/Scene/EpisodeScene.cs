@@ -13,15 +13,15 @@ public class EpisodeScene : BaseScene
 
     [SerializeField] private QuotesPanel _quotesPanelPrefab;
 
-    protected override void OnSceneInitialize()
+    public override void OnPreLoadScene()
     {
-        base.OnSceneInitialize();
-
+        base.OnPreLoadScene();
+        
         if (_titlePanel == null)
         {
             _titlePanel = Instantiate(_titlePanelPrefab, GameManager.Instance.uiCanvas.transform);
         }
-        _titlePanelPrefab.Show(_title, OnEpisodeStart);
+        _titlePanel.Show(_title, OnEpisodeStart);
     }
 
     protected virtual void OnEpisodeStart()

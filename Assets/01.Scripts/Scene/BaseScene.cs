@@ -6,6 +6,8 @@ public class BaseScene : MonoBehaviour
     [SerializeField] UnityEvent onInitializeEvent = null;
     [SerializeField] UnityEvent onReleaseEvent = null;
 
+    public virtual void OnPreLoadScene(){}
+    
     protected virtual void OnSceneInitialize() { }
     public void Initialize()
     {
