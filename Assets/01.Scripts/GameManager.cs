@@ -27,9 +27,21 @@ public class GameManager : MonoSingleton<GameManager>
 
     public async Task LoadSceneWithFade(Scenes nextScene, Action callback = null)
     {
+        int sceneIndex = (int)nextScene;
+        if(_scenes.Count <= sceneIndex || sceneIndex < 0)
+            return;
+
         await ShowBlackAsync(true);
-        Destroy(_currentScene.gameObject);
-        _currentScene = Instantiate(_scenes[(int)nextScene]);
+        
+        if(_currentScene != null)
+        {
+            _currentScene.Release();
+            Destroy(_currentScene.gameObject);
+        }
+
+        _currentScene = Instantiate(_scenes[sceneIndex]);
+        _currentScene.Initialize();
+
         await ShowBlackAsync(false);
         callback?.Invoke();
     }
