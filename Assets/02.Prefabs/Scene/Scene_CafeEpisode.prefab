@@ -305,6 +305,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bfa1f513c942eea946be2da53ebc0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onInitializeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  episodeData: {fileID: 0}
   _title: "\uADF8\uB140\uC640 \uB9CC\uB09C\uC9C0 \uC5BC\uB9C8 \uB418\uC9C0 \uC54A\uB358
     \uB0A0\n\uCE74\uD398\uC5D0\uC11C..."
   _titlePanelPrefab: {fileID: 5348039547804228864, guid: 7e230f93efb314f1fbd7877be814b370, type: 3}
@@ -573,34 +580,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8740854646384988093}
     m_Modifications:
-    - target: {fileID: 1816840183758946816, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1981686295499715641, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_Text
-      value: "\uB0B4\uAC00 \uC5B4\uCE90 \uC544\uB294\uB370\n\uC539\uB0D0\uB9C1\uC544"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2373799334516004504, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2373799334516004504, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14
@@ -611,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.327
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 2511231027876675902, guid: 4564276167b9441468387cb8de25f082, type: 3}
       propertyPath: m_LocalRotation.w

@@ -57,34 +57,6 @@ public class TextManager : MonoSingleton<TextManager>
             ShowText(startPos,"score");
         }
     }
-    
-    public static void CallMessageEvent(EventMarker eventMarker)
-    {
-        switch (eventMarker.name)
-        {
-            // case "camDampingChange":
-            //     CamDampingChangeHandle(eventMarker);
-            //     break;
-            // case "camFollowTargetChange":
-            //     CamFollowTargetChangeHandle(eventMarker);
-            //     break;
-            // case "camOffsetChange":
-            //     CamOffsetChangeHandle(eventMarker);
-            //     break;
-            // case "camSizeChange":
-            //     CamSizeChangeHandle(eventMarker);
-            //     break;
-            // case "setTutorialProps":
-            //     SetTutorialPropsHandle(eventMarker);
-            //     break;
-            // case "PlayVideo":
-            //     PlayVideo(eventMarker);
-            //     break;
-            // case "StopVideo":
-            //     StopVideo();
-            //     break;
-        }
-    }
 }
 
 
