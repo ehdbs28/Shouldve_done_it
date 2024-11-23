@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   situationMenuVCam: {fileID: 942766739032157934}
-  situationSlotDisplayDelay: 1
+  situationSlotDisplayDelay: 2.25
   situationSlotGroupUI: {fileID: 194718544435427297}
 --- !u!1 &7203396394563251434
 GameObject:
