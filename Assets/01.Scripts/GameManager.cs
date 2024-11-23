@@ -11,7 +11,7 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField] private List<BaseScene> _scenes;
     private BaseScene _currentScene;
     
-    [SerializeField] private Canvas _uiCanvas;
+    public Canvas uiCanvas;
     [SerializeField] private Image _blackPanelPrefab;
 
     [SerializeField] private RectTransform _topLetterBox;
@@ -35,6 +35,7 @@ public class GameManager : MonoSingleton<GameManager>
         Destroy(_currentScene.gameObject);
         _currentScene = Instantiate(_scenes[(int)nextScene]);
         await ShowBlackAsync(false);
+        _currentScene.OnLoad();
         callback?.Invoke();
     }
     
@@ -42,7 +43,7 @@ public class GameManager : MonoSingleton<GameManager>
     {
         if (_blackPanel == null)
         {
-            _blackPanel = Instantiate(_blackPanelPrefab, _uiCanvas.transform);
+            _blackPanel = Instantiate(_blackPanelPrefab, uiCanvas.transform);
             _blackPanel.transform.SetAsLastSibling();
         }
         
