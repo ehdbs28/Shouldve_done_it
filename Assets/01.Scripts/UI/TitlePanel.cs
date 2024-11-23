@@ -13,12 +13,22 @@ public class TitlePanel : MonoBehaviour
     private Action _callback;
     
 
-    public void Show(string text, Action callback = null)
+    public void Show(string text, bool force, Action callback = null)
     {
         _callback = callback;
-        
+
         gameObject.SetActive(true);
-        canvasGroup.alpha = 1;
+
+        if (force)
+        {
+            canvasGroup.alpha = 1;
+        }
+        else
+        {
+            canvasGroup.alpha = 0;
+            canvasGroup.DOFade(1, 0.5f);
+        }
+
         _text.text = text;
         StartCoroutine(Seq());
     }

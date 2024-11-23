@@ -13,15 +13,15 @@ public class EpisodeScene : BaseScene
 
     [SerializeField] private QuotesPanel _quotesPanelPrefab;
 
-    public override void OnPreLoadScene()
+    public override void OnPreLoadScene(Scenes next, Scenes prev)
     {
-        base.OnPreLoadScene();
+        base.OnPreLoadScene(next, prev);
         
         if (_titlePanel == null)
         {
             _titlePanel = Instantiate(_titlePanelPrefab, GameManager.Instance.uiCanvas.transform);
         }
-        _titlePanel.Show(_title, OnEpisodeStart);
+        _titlePanel.Show(_title, next != prev, OnEpisodeStart);
     }
 
     protected virtual void OnEpisodeStart()
@@ -39,10 +39,12 @@ public class EpisodeScene : BaseScene
         var panel = Instantiate(_quotesPanelPrefab, GameManager.Instance.uiCanvas.transform);
         panel.Show(text, author);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
 
-        GameManager.Instance.LoadSceneWithFade(sceneType);
-        panel.Close();
+        GameManager.Instance.LoadSceneWithFade(sceneType, scene =>
+        {
+            panel.Close(true);
+        });
     }
     
 }

@@ -19,15 +19,22 @@ public class QuotesPanel : MonoBehaviour
 
     public void Show(string text, string author)
     {
-        _canvasGroup.DOFade(0, 0.5f);
+        gameObject.SetActive(true);
+        _canvasGroup.alpha = 0f;
+        _canvasGroup.DOFade(1, 5f);
         _text.text = text;
         _author.text = author;
-        gameObject.SetActive(true);
     }
 
-    public void Close()
+    public void Close(bool force = false)
     {
-        _canvasGroup.DOFade(0, 0.5f)
+        if (force)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        
+        _canvasGroup.DOFade(0, 2f)
             .OnComplete(() =>
             {
                 Destroy(this.gameObject);

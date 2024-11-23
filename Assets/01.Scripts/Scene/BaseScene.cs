@@ -6,7 +6,12 @@ public class BaseScene : MonoBehaviour
     [SerializeField] UnityEvent onInitializeEvent = null;
     [SerializeField] UnityEvent onReleaseEvent = null;
 
-    public virtual void OnPreLoadScene(){}
+    [SerializeField] private Camera _camera;
+
+    public virtual void OnPreLoadScene(Scenes next, Scenes prev)
+    {
+        CameraManager.Instance.SettingCamera(_camera == null ? Camera.main : _camera);
+    }
     
     protected virtual void OnSceneInitialize() { }
     public void Initialize()

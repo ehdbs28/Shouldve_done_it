@@ -27,16 +27,18 @@ public class SpeechBubble : MonoBehaviour
 
     public GameObject thinking;
 
-    private Action<bool> _selectChoiceCallback;
+    private Action<bool, int> _selectChoiceCallback;
 
     private Vector3 _initScale;
+
+    public int selectIndex;
 
     private void Awake()
     {
         _initScale = transform.localScale;
     }
 
-    public void Show(SpeechBubbleType type, bool isThinking = false, string text = "", ChoiceInfo[] choices = null, Action<bool> selectChoiceCallback = null)
+    public void Show(SpeechBubbleType type, bool isThinking = false, string text = "", ChoiceInfo[] choices = null, Action<bool, int> selectChoiceCallback = null)
     {
         gameObject.SetActive(true);
         
@@ -76,10 +78,11 @@ public class SpeechBubble : MonoBehaviour
     
     private void SetChoices(ChoiceInfo[] choices)
     {
-        foreach (var info in choices)
+        for (var i = 0; i < choices.Length; i++)
         {
             var choiceUnit = Instantiate(choiceUnitPrefab, choiceParent);
-            choiceUnit.Set(info, _selectChoiceCallback);
+            choiceUnit.Set(choices[i], i, _selectChoiceCallback);
+            _choices.Add(choiceUnit);
         }
     }
 

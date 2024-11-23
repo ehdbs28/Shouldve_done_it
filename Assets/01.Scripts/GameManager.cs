@@ -10,6 +10,9 @@ public class GameManager : MonoSingleton<GameManager>
 {
     [SerializeField] private List<BaseScene> _scenes;
     private BaseScene _currentScene;
+
+    private Scenes _currentSceneType;
+    public Scenes CurrentSceneType => _currentSceneType;
     
     public Canvas uiCanvas;
     [SerializeField] private Image _blackPanelPrefab;
@@ -27,7 +30,8 @@ public class GameManager : MonoSingleton<GameManager>
     public override void InitManager()
     {
         TextManager.Instance.InitManager();
-        SoundManager.Instance.InitManager();    
+        SoundManager.Instance.InitManager();  
+        CameraManager.Instance.InitManager();
     }
 
     public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
@@ -53,9 +57,10 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
-        _currentScene.OnPreLoadScene();
+        _currentScene.OnPreLoadScene((Scenes)sceneIndex, _currentSceneType);
         onLoadComplete?.Invoke(_currentScene as T);
-
+        _currentSceneType = (Scenes)sceneIndex;
+        
         yield return StartCoroutine(ShowBlackAsync(false));
 
         _currentScene.Initialize();

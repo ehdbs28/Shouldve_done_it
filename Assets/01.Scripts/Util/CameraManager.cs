@@ -57,6 +57,26 @@ public class CameraManager : MonoSingleton<CameraManager>
             callback?.Invoke();
         });
     }
-    
 
+    public void SetPosition(Vector3 endPosition, float timer, Action callback = null)
+    {
+        if (_camera == null) return;
+
+        _camera.transform.DOMove(endPosition, timer)
+            .OnComplete(() =>
+            {
+                callback?.Invoke();
+            });
+    }
+
+    public void SetRotation(Quaternion endRotation, float timer, Action callback = null)
+    {
+        if (_camera == null) return;
+
+        _camera.transform.DORotateQuaternion(endRotation, timer)
+            .OnComplete(() =>
+            {
+                callback?.Invoke();
+            });
+    }
 }
