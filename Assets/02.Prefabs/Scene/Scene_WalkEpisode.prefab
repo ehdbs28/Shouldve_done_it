@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTime: 0.25
+  failText: "\uBC40 \uC870\uC2EC\uD558\uC138\uC694 !!!!"
+  failAuthor: "\uBC15\uC138\uD6C8"
   taipanPrefab: {fileID: 191139712265525777, guid: 13529be2286c34b6890ac96210e837ef, type: 3}
 --- !u!1 &2516268352966242303
 GameObject:
@@ -196,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6494264709471985193}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.038308114, y: 0.947345, z: -0.29274955, w: 0.12396606}
+  m_LocalRotation: {x: 0.038308118, y: 0.947345, z: -0.29274955, w: 0.12396605}
   m_LocalPosition: {x: 17.12, y: 2.5400002, z: -1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -453,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8402499404363318805}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.038308114, y: 0.947345, z: -0.29274955, w: 0.12396606}
+  m_LocalRotation: {x: 0.038308118, y: 0.947345, z: -0.29274955, w: 0.12396605}
   m_LocalPosition: {x: -0.9, y: 2.39, z: 3.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

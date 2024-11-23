@@ -27,6 +27,7 @@ public class Scene_WalkEpisode : EpisodeScene
     private float remainReactionTime;
 
     private bool _isMoving;
+    private bool _callbacked;
 
     private WalkEpisodeEvent _curEvent;
 
@@ -34,7 +35,9 @@ public class Scene_WalkEpisode : EpisodeScene
 
     private void Start()
     {
-        StartCoroutine(EpisodeRoutine());   
+        // StartCoroutine(EpisodeRoutine());   
+        maleAnimator.SetBool(idleHash, true);
+        femaleAnimator.SetBool(idleHash, true);
     }
 
     protected override void OnEpisodeStart()
@@ -47,11 +50,14 @@ public class Scene_WalkEpisode : EpisodeScene
     {
         remainEventTime = eventInterval;
         _isMoving = true;
+        maleAnimator.SetBool(idleHash, false);
+        femaleAnimator.SetBool(idleHash, false);
         
         while (true)
         {
             if (remainEventTime <= 0)
             {
+                _callbacked = false;
                 _isMoving = false;
                 EventProcess();
                 remainEventTime = eventInterval;
@@ -76,7 +82,7 @@ public class Scene_WalkEpisode : EpisodeScene
 
     private void Update()
     {
-        if (_isMoving)
+        if (_isMoving || _callbacked || _curEvent == null)
         {
             return;
         }
@@ -86,11 +92,11 @@ public class Scene_WalkEpisode : EpisodeScene
         if (remainReactionTime > 0f)
         {
             if (Input.GetKeyDown(KeyCode.Space))
-                SetResult(true);
+                SetResult(null, null, true);
         }
         else
         {
-            SetResult(false);
+            SetResult(_curEvent.failText, _curEvent.failAuthor, false);
         }
     }
 
@@ -107,11 +113,13 @@ public class Scene_WalkEpisode : EpisodeScene
         _curEvent.OnProcess();
     }
 
-    public override void SetResult(bool success)
+    public override void SetResult(string text, string author, bool success)
     {
+        _callbacked = true;
+        
         _curEvent.OnResult(success);
 
-        if (success)
+        if (success && (text == null || author == null))
         {
             _isMoving = true;
             maleAnimator.SetBool(idleHash, true);
@@ -119,6 +127,6 @@ public class Scene_WalkEpisode : EpisodeScene
             return;
         }
         
-        base.SetResult(success);
+        base.SetResult(text, author, success);
     }
 }
