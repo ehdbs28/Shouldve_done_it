@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311935, g: 0.38074002, b: 0.3587273, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,7 +232,7 @@ MonoBehaviour:
   _scenes:
   - {fileID: 1113259661166900587, guid: d7fe11d26cc744cb6aa6729793676501, type: 3}
   - {fileID: 4659327347550119951, guid: dcf2569362bca4149b49263b32cdbd47, type: 3}
-  - {fileID: 4659327347550119951, guid: dcf2569362bca4149b49263b32cdbd47, type: 3}
+  - {fileID: 8465134998608046513, guid: e22c2fda2c3bc42c1b9d11d16c5acccf, type: 3}
   - {fileID: 4659327347550119951, guid: dcf2569362bca4149b49263b32cdbd47, type: 3}
   - {fileID: 931544247430691948, guid: b45e8821fa24a430393b805fdf38a627, type: 3}
   uiCanvas: {fileID: 636051549}
@@ -286,6 +286,7 @@ MonoBehaviour:
   UserData:
     ProgressData:
       CurrentEpisodeIndex: 0
+      CurrentSituationData: {fileID: 0}
 --- !u!1 &636051546
 GameObject:
   m_ObjectHideFlags: 0
