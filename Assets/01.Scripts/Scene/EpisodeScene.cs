@@ -17,6 +17,11 @@ public class EpisodeScene : BaseScene
         {
             _titlePanel = Instantiate(_titlePanelPrefab, GameManager.Instance.uiCanvas.transform);
         }
-        _titlePanelPrefab.Show(_title);
+        _titlePanelPrefab.Show(_title, OnEpisodeStart);
+    }
+
+    protected virtual void OnEpisodeStart()
+    {
+        
     }
 }

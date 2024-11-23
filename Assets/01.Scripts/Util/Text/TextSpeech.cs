@@ -53,12 +53,12 @@ public class TextSpeech : MonoBehaviour
         switch (eventMarker.name)
         {
             case "startEvent":
-                SoundManager.Instance.PlayTalkSFX();
+                // SoundManager.Instance.PlayTalkSFX();
                 break;
             case "endEvent":
                 break;
             case "soundStopEvent":
-                SoundManager.Instance.StopSFX();
+                // SoundManager.Instance.StopSFX();
                 break;
         }
     }

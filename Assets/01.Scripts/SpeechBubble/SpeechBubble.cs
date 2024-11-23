@@ -11,6 +11,7 @@ public class SpeechBubble : MonoBehaviour
         Choice
     }
 
+    [Serializable]
     public class ChoiceInfo
     {
         public string text;
@@ -22,7 +23,7 @@ public class SpeechBubble : MonoBehaviour
 
     public Transform choiceParent;
     public SpeechBubbleChoiceUnit choiceUnitPrefab;
-    private List<SpeechBubbleChoiceUnit> _choices;
+    private List<SpeechBubbleChoiceUnit> _choices = new List<SpeechBubbleChoiceUnit>();
 
     public GameObject thinking;
 
@@ -63,8 +64,9 @@ public class SpeechBubble : MonoBehaviour
     public void Close()
     {
         thinking.SetActive(false);
-        transform.DOScale(Vector3.zero, 0.2f)
-            .OnComplete(() => gameObject.SetActive(false));
+        transform.DOScale(_initScale * 1.1f, 0.2f)
+            .OnComplete(() => transform.DOScale(Vector3.zero, 0.1f)
+                .OnComplete(() => gameObject.SetActive(false)));
     }
 
     private void WriteText(string text)
