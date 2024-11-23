@@ -30,12 +30,7 @@ public class EpisodeScene : BaseScene
 
     public virtual void SetResult(string text, string author, bool success)
     {
-        StartCoroutine(ResultRoutine(success ? Scenes.Situation : Scenes.EpisodeCafe, text, author));
-    }
-
-    public virtual void SetResult(bool success)
-    {
-        StartCoroutine(ResultRoutine(success ? Scenes.Situation : Scenes.EpisodeCafe));
+        StartCoroutine(ResultRoutine(success ? Scenes.Situation : GameManager.Instance.CurrentSceneType, text, author));
     }
 
     private IEnumerator ResultRoutine(Scenes sceneType, string text = null, string author = null)
