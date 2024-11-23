@@ -23,14 +23,13 @@ public class Scene_CafeEpisode : EpisodeScene
     
     private void Start()
     {
-        StartCoroutine(EpisodeRoutine());
+        // StartCoroutine(EpisodeRoutine());
     }
 
     protected override void OnEpisodeStart()
     {
         base.OnEpisodeStart();
-        
-        
+        StartCoroutine(EpisodeRoutine());
     }
 
     private void Update()
