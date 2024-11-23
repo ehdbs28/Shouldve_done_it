@@ -2463,6 +2463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4088be5d89660f348b7817b135ea4e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Priority: 1
+  PriorityIncreaseObject: 0
 --- !u!1001 &867047901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3638,6 +3640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8616c1150fb2a884a8a2edf0c8cc7bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Priority: 1
+  PriorityIncreaseObject: 0
   Light: {fileID: 560107620}
 --- !u!1001 &1098896854
 PrefabInstance:
@@ -6792,6 +6796,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4bf5485ba0ad24e98d6db6df661e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onInitializeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  episodeData: {fileID: 0}
   _title: 
   _titlePanelPrefab: {fileID: 0}
   FemaleWakeUpTimer: {fileID: 893675144}
@@ -6969,6 +6980,10 @@ PrefabInstance:
     - target: {fileID: 4520798828470683488, guid: 6628eb0ec3811408fb3d4048d2b8c126, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 30.509
+      objectReference: {fileID: 0}
+    - target: {fileID: 4743552583803291007, guid: 6628eb0ec3811408fb3d4048d2b8c126, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4780145935128594852, guid: 6628eb0ec3811408fb3d4048d2b8c126, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7311,6 +7326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de47724c8ec8234697988b6c01b21be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Priority: 0
+  PriorityIncreaseObject: 1
   DropBook: {fileID: 1012912859}
   ShakeDuration: 0.25
   ShakeDelay: 0.03

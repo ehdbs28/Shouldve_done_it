@@ -6,6 +6,17 @@ namespace Episode.Room
 {
     public class ClickableObject : MonoBehaviour
     {
-        protected virtual void OnMouseDown() { }
+        public static int CurrentPriority;
+
+        [SerializeField] protected int Priority;
+        [SerializeField] private bool PriorityIncreaseObject;
+
+        protected virtual void OnMouseDown() 
+        {
+            if (Priority > CurrentPriority) return;
+
+            if (PriorityIncreaseObject)
+                CurrentPriority++;
+        }
     }
 }
