@@ -28,7 +28,8 @@ namespace Episode.Room
             if (MaleCharacter.IsDeletingTalk)
             {
                 //start talk
-                ShowDeletingSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, "³Ê ¹¹ÇÏ³Ä?");
+                string value = Define.sDialogDictionary["roomBubbleWhat"];
+                ShowDeletingSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, value);
 
                 StartCoroutine(ShowDeleingEnding());
             }
@@ -43,7 +44,8 @@ namespace Episode.Room
         {
             yield return new WaitForSeconds(2f);
 
-            Room.SetResult("µéÅ² Àß¸øÀº º¯¸íÀÌ ¾Æ´Ï¶ó ´ë°¡¸¦ ¿ä±¸ÇÑ´Ù.", "Serena Vale", false);
+            string value = Define.sDialogDictionary["roomDeleing"];
+            Room.SetResult( value, "Serena Vale", false);
         }
 
         public void StandUp()
@@ -72,12 +74,14 @@ namespace Episode.Room
             seq.AppendCallback(() =>
             {
                 //start talk
-                ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "ÀÌ ¤µ¤¢ ¹Ù¶÷ÇÇ°íÀÖ¾ú³×...");
+                string value = Define.sDialogDictionary["roomMyung"];
+                ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¶ï¿½ï¿½Ç°ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½...");
             });
             seq.AppendInterval(2f);
             seq.AppendCallback(() =>
             {
-                Room.SetResult("¸ğ¸£´Â °ÍÀº ¶§·Î Ãàº¹ÀÌÁö¸¸, ¾Ë°Ô µÈ ÈÄ¿¡´Â ÁöÇı·Î ¹Ù²ã¾ß ÇÑ´Ù.", "Rowan Blake", false);
+                string value = Define.sDialogDictionary["roomMyung2"];
+                Room.SetResult(value, "Rowan Blake", false);
             });
 
             seq.SetAutoKill(true);
