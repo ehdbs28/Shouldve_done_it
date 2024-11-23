@@ -46,8 +46,8 @@ public class TextManager : MonoSingleton<TextManager>
 
         string titleText = "titleText";
         string text = Define.sDialogDictionary[key];
-        speech.Setting();
-        speech.AppearText(titleText, text);
+        // speech.Setting();
+        // speech.AppearText(titleText, text);
     }
     private void Update()
     {

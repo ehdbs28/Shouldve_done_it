@@ -6,7 +6,8 @@ public class TextSpeech : MonoBehaviour
 {
     private TextAnimator_TMP _textAnimator;
     private TypewriterByCharacter _typeWriter;
-    public void Setting()
+    
+    public void Awake()
     {
         Transform canvasTrm = transform.Find("Canvas");
         Transform bodyTextTrm = canvasTrm.Find("BodyText");
