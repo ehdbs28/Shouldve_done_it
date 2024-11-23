@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using OMG.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -48,6 +49,17 @@ public class Scene_WalkEpisode : EpisodeScene
     {
         base.OnEpisodeStart();
         StartCoroutine(EpisodeRoutine());
+        FootStepSoundLoop();
+    }
+
+    private void FootStepSoundLoop()
+    {
+        if(_isMoving)
+            SoundManager.Instance.PlaySFX($"FootStep{Random.Range(1, 4)}");
+
+        StartCoroutine(this.DelayCoroutine(0.5f, () => {
+            FootStepSoundLoop();
+        }));
     }
 
     private IEnumerator EpisodeRoutine()
@@ -106,6 +118,8 @@ public class Scene_WalkEpisode : EpisodeScene
             {
                 CameraManager.Instance.Shake(0.2f, 0.5f);
                 SetResult(null, null, true);
+
+                SoundManager.Instance.PlaySFX("ButtonSound2");
             }
         }
         else

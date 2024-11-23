@@ -118,12 +118,12 @@ public class SoundManager : MonoSingleton<SoundManager>
         else if (type == SoundEnum.EFFECT)
         {
             AudioSource audioSource = _audioSources[(int)SoundEnum.EFFECT];
-            audioSource.clip = audioClip; 
-            float time = startRandomTime ? Random.Range(0, audioSource.clip.length) : 0;;
-            audioSource.time = time;
-            audioSource.loop = loop;
-            audioSource.Play(); 
-            //audioSource.PlayOneShot(audioClip);
+            // audioSource.clip = audioClip; 
+            // float time = startRandomTime ? Random.Range(0, audioSource.clip.length) : 0;;
+            // audioSource.time = time;
+            // audioSource.loop = loop;
+            // audioSource.Play(); 
+            audioSource.PlayOneShot(audioClip);
             return;
         }
     }

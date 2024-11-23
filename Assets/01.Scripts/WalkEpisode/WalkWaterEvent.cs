@@ -45,6 +45,8 @@ public class WalkWaterEvent : WalkEpisodeEvent
                 {
                     walk.femaleAnimator.SetTrigger(walk.female_terrified);
                 });
+
+            SoundManager.Instance.PlaySFX("WaterSplash");
         }
     }
 }
