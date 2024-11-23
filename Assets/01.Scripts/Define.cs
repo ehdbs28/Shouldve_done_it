@@ -17,6 +17,7 @@ public static class Define
         {
             TextTableProb prob = textTable.Datas[i];
             sDialogDictionary.Add(prob.TextID, prob.Korean);
+            Debug.Log($"TextId: {prob.TextID}  Korean: {prob.Korean} ");
         }
     }
     
