@@ -63,6 +63,8 @@ public class Scene_WalkEpisode : EpisodeScene
             {
                 _callbacked = false;
                 _isMoving = false;
+                maleAnimator.SetBool(idleHash, true);
+                femaleAnimator.SetBool(idleHash, true);
                 EventProcess();
                 remainEventTime = eventInterval;
             }
@@ -76,6 +78,10 @@ public class Scene_WalkEpisode : EpisodeScene
 
                 if (movingTime <= 0f)
                 {
+                    _isMoving = false;
+                    maleAnimator.SetBool(idleHash, true);
+                    femaleAnimator.SetBool(idleHash, true);
+                    SetResult("고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.", "ChatGPT", true);
                     break;
                 }
             }
@@ -97,7 +103,10 @@ public class Scene_WalkEpisode : EpisodeScene
         if (remainReactionTime > 0f)
         {
             if (Input.GetKeyDown(KeyCode.Space))
+            {
+                CameraManager.Instance.Shake(0.2f, 0.5f);
                 SetResult(null, null, true);
+            }
         }
         else
         {
@@ -107,9 +116,6 @@ public class Scene_WalkEpisode : EpisodeScene
 
     private void EventProcess()
     {
-        maleAnimator.SetBool(idleHash, true);
-        femaleAnimator.SetBool(idleHash, true);
-        
         var eventIdx = Random.Range(0, events.Count);
         _curEvent = events[eventIdx];
 
@@ -130,7 +136,6 @@ public class Scene_WalkEpisode : EpisodeScene
         if (success && (text == null || author == null))
         {
             StartCoroutine(Delay());
-            
             return;
         }
         
@@ -139,7 +144,7 @@ public class Scene_WalkEpisode : EpisodeScene
 
     private IEnumerator Delay()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(_curEvent.successDelay);
         maleAnimator.SetBool(idleHash, false);
         femaleAnimator.SetBool(idleHash, false);
         _isMoving = true;
