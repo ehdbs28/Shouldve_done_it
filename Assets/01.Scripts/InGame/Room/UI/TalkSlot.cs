@@ -13,6 +13,10 @@ namespace Episode.Room
         private Vector2 DragStartPos;
         private Vector2 OriginLocalPos;
 
+        [Space]
+        [SerializeField] private float DeleteDistance;
+        [SerializeField] private bool IsDelete;
+
         protected override void Awake()
         {
             base.Awake();
@@ -22,6 +26,9 @@ namespace Episode.Room
 
         private void Update()
         {
+            if (IsDelete)
+                return;
+
             if(OnDragging)
             {
                 Vector2 Pos = new Vector2(
@@ -29,6 +36,11 @@ namespace Episode.Room
                         OriginLocalPos.y
                     );
                 Rect.anchoredPosition = Pos;
+
+                if(Rect.anchoredPosition.x - OriginLocalPos.x >= DeleteDistance)
+                {
+                    Delete();
+                }
             }
         }
 
@@ -41,9 +53,22 @@ namespace Episode.Room
 
         private void EndDrag()
         {
-            OnDragging = false;
+            if (IsDelete)
+                return;
 
+            OnDragging = false;
+            
             Rect.DOAnchorPos(OriginLocalPos, ReturnTime);
+        }
+
+        private void Delete()
+        {
+            IsDelete = true;
+
+            Rect.DOAnchorPos(Rect.anchoredPosition + 500f * Vector2.right, ReturnTime).OnComplete(() =>
+            {
+                Destroy(gameObject);
+            });
         }
 
         public override void OnPointerDown(PointerEventData eventData)

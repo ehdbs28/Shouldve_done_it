@@ -3563,6 +3563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1 &893675142
 GameObject:
   m_ObjectHideFlags: 0
@@ -5931,6 +5933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1 &1286496166
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,6 +7568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1001 &1538486129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8907,6 +8913,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1001 &1803634352
 PrefabInstance:
   m_ObjectHideFlags: 0
