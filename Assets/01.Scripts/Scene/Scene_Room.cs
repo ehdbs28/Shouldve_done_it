@@ -2,7 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene_Room : MonoBehaviour
+namespace Episode.Room
 {
+    public class Scene_Room : BaseScene
+    {
+        [Space]
+        [SerializeField] private Timer FemaleWakeUpTimer;
+        [SerializeField] private Character FemaleCharacter;
 
+        private void Start()
+        {
+            FemaleWakeUpTimer.OnTimeOverEvent.AddListener(WakeUpFemale);
+            StartFemaleWakeUpTimer();
+        }
+
+        public void StartFemaleWakeUpTimer()
+        {
+            FemaleWakeUpTimer.StartTimer();
+        }
+
+        private void WakeUpFemale()
+        {
+            FemaleCharacter.GetAnim().SetTrigger("stand_up");
+        }
+    }
 }
