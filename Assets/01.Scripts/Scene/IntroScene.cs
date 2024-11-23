@@ -11,7 +11,10 @@ public class IntroScene : BaseScene
         if(DataManager.UserData.ProgressData.ClearedSituationList.Count > 0)
         {
             demoUI.SetActive(true);
+            return;
         }
+
+        demoUI.SetActive(false);
     }
 
     public void ResetAndKeepGoing()
