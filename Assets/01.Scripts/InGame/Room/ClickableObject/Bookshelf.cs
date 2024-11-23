@@ -18,8 +18,8 @@ namespace Episode.Room
 
         protected override void OnMouseDown()
         {
-            if (IsShaked)
-                return;
+            if (Priority > CurrentPriority) return;
+            if (IsShaked) return;
 
             base.OnMouseDown();
 

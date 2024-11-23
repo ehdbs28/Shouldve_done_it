@@ -8,6 +8,8 @@ namespace Episode.Room
     {
         protected override void OnMouseDown()
         {
+            if (Priority > CurrentPriority) return;
+
             base.OnMouseDown();
 
             Debug.Log("click phone");

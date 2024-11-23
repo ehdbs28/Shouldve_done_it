@@ -10,6 +10,13 @@ namespace Episode.Room
         [SerializeField] private Timer FemaleWakeUpTimer;
         [SerializeField] private Character FemaleCharacter;
 
+        protected override void OnEpisodeStart()
+        {
+            base.OnEpisodeStart();
+
+            ClickableObject.CurrentPriority = 1;
+        }
+
         private void Start()
         {
             FemaleWakeUpTimer.OnTimeOverEvent.AddListener(WakeUpFemale);

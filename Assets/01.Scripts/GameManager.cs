@@ -30,13 +30,21 @@ public class GameManager : MonoSingleton<GameManager>
         SoundManager.Instance.InitManager();    
     }
 
-    public async void LoadSceneWithFade<T>(Scenes nextScene, Action<T> callback = null) where T : BaseScene
+    public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> callback = null) where T : BaseScene
     {
         int sceneIndex = (int)nextScene;
         if(_scenes.Count <= sceneIndex || sceneIndex < 0)
             return;
 
-        await ShowBlackAsync(true);
+        StartCoroutine(LoadSceneWithFadeRoutine(sceneIndex, callback));
+    }
+
+    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> callback = null)
+        => LoadSceneWithFade<BaseScene>(nextScene, callback);
+
+    private IEnumerator LoadSceneWithFadeRoutine<T>(int sceneIndex, Action<T> callback = null) where T : BaseScene
+    {
+        yield return StartCoroutine(ShowBlackAsync(true));
         
         if(_currentScene != null)
         {
@@ -46,24 +54,26 @@ public class GameManager : MonoSingleton<GameManager>
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
 
-        await ShowBlackAsync(false);
+        yield return StartCoroutine(ShowBlackAsync(false));
 
         _currentScene.Initialize();
         callback?.Invoke(_currentScene as T);
     }
-
-    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> callback = null)
-        => LoadSceneWithFade<BaseScene>(nextScene, callback);
     
-    public async Task ShowBlackAsync(bool value)
+    public IEnumerator ShowBlackAsync(bool value)
     {
         if (_blackPanel == null)
         {
             _blackPanel = Instantiate(_blackPanelPrefab, uiCanvas.transform);
             _blackPanel.transform.SetAsLastSibling();
         }
-        
+
+        _blackPanel.gameObject.SetActive(true);
+
         // todo fade 넣기
+        const float FADE_DURATION = 0.5f;
+        yield return _blackPanel.DOFade(value ? 1 : 0, FADE_DURATION).WaitForCompletion();
+        _blackPanel.gameObject.SetActive(value);
     }
 
     public void SetLetterBoxSize(float newSize, float timer = 0.3f)

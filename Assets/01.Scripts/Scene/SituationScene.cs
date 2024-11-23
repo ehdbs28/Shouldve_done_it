@@ -16,8 +16,11 @@ public class SituationScene : BaseScene
         cutscene.Play(OnFinishCutscene);
     }
 
-    private void OnFinishCutscene()
+    private void OnFinishCutscene(Cutscene cutscene)
     {
+        Debug.Log("--->OnFinishCutscene");
         episodeSlotGroupUI.Initialize(currentSituationData.episodeDatas);
+
+        Destroy(cutscene.gameObject);
     }
 }
