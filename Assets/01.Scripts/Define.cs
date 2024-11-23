@@ -6,6 +6,7 @@ using UnityEngine;
 public static class Define
 {
     public static Dictionary<string, string> sDialogDictionary;
+    public static AudioListener sAudioListener => Camera.main.GetComponent<AudioListener>();
     static Define()
     {
         sDialogDictionary = new Dictionary<string, string>();
