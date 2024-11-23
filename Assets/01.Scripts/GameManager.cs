@@ -27,17 +27,33 @@ public class GameManager : MonoSingleton<GameManager>
     public override void InitManager()
     {
         TextManager.Instance.InitManager();
+        SoundManager.Instance.InitManager();    
     }
 
-    public async Task LoadSceneWithFade(Scenes nextScene, Action callback = null)
+    public async void LoadSceneWithFade<T>(Scenes nextScene, Action<T> callback = null) where T : BaseScene
     {
+        int sceneIndex = (int)nextScene;
+        if(_scenes.Count <= sceneIndex || sceneIndex < 0)
+            return;
+
         await ShowBlackAsync(true);
-        Destroy(_currentScene.gameObject);
-        _currentScene = Instantiate(_scenes[(int)nextScene]);
+        
+        if(_currentScene != null)
+        {
+            _currentScene.Release();
+            Destroy(_currentScene.gameObject);
+        }
+
+        _currentScene = Instantiate(_scenes[sceneIndex]);
+
         await ShowBlackAsync(false);
-        _currentScene.OnLoad();
-        callback?.Invoke();
+
+        _currentScene.Initialize();
+        callback?.Invoke(_currentScene as T);
     }
+
+    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> callback = null)
+        => LoadSceneWithFade<BaseScene>(nextScene, callback);
     
     public async Task ShowBlackAsync(bool value)
     {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Febucci.UI.Core.Parsing;
 using UnityEngine;
+using System;
 
 public class Pool<T> where T : MonoBehaviour
 {
@@ -12,15 +13,16 @@ public class Pool<T> where T : MonoBehaviour
     {
         if (_poolStack.TryPop(out T text))
         {
+            text.gameObject.SetActive(true);
             return text;
         }
-
         return CreatePoolObj();
     }
 
-    public void Push(TextSpeech speech)
+    public void Push(T speech)
     {
-        
+        speech.gameObject.SetActive(false);
+        _poolStack.Push(speech);
     }
 
     private T CreatePoolObj()
@@ -31,23 +33,29 @@ public class Pool<T> where T : MonoBehaviour
 public class TextManager : MonoSingleton<TextManager>
 {
     [SerializeField] private TextSpeech _textSppech;
-    private Pool<TextSpeech> _textSppechPool;
+    private Pool<TextSpeech> _textSpeechPool;
 
     [SerializeField] private GameObject _obj;
     public override void InitManager()
     {
-        _textSppechPool = new Pool<TextSpeech>();
-        _textSppechPool.Obj = _textSppech;
+        _textSpeechPool = new Pool<TextSpeech>();
+        _textSpeechPool.Obj = _textSppech;
     }
 
     public void ShowText(Vector3 startPos,string key)
     {
-        TextSpeech speech = _textSppechPool.Pop();
+        TextSpeech speech = _textSpeechPool.Pop();
 
         string titleText = "titleText";
         string text = Define.sDialogDictionary[key];
-        speech.Setting();
-        speech.AppearText(titleText, text);
+        // speech.Setting();
+        // speech.AppearText(titleText, text);
+    }
+
+    public void UnShowText(TextSpeech textSpeech, Action Callback = null)
+    {
+        _textSpeechPool.Push(textSpeech);
+        Callback?.Invoke();
     }
     private void Update()
     {
@@ -55,34 +63,6 @@ public class TextManager : MonoSingleton<TextManager>
         {
             Vector3 startPos = _obj.transform.position + new Vector3(0, 1f, 0);
             ShowText(startPos,"score");
-        }
-    }
-    
-    public static void CallMessageEvent(EventMarker eventMarker)
-    {
-        switch (eventMarker.name)
-        {
-            // case "camDampingChange":
-            //     CamDampingChangeHandle(eventMarker);
-            //     break;
-            // case "camFollowTargetChange":
-            //     CamFollowTargetChangeHandle(eventMarker);
-            //     break;
-            // case "camOffsetChange":
-            //     CamOffsetChangeHandle(eventMarker);
-            //     break;
-            // case "camSizeChange":
-            //     CamSizeChangeHandle(eventMarker);
-            //     break;
-            // case "setTutorialProps":
-            //     SetTutorialPropsHandle(eventMarker);
-            //     break;
-            // case "PlayVideo":
-            //     PlayVideo(eventMarker);
-            //     break;
-            // case "StopVideo":
-            //     StopVideo();
-            //     break;
         }
     }
 }

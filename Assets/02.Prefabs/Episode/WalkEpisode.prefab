@@ -264,6 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2775175330274209716}
+  - component: {fileID: -2828531503607214661}
   m_Layer: 0
   m_Name: WalkEpisode
   m_TagString: Untagged
@@ -299,6 +300,27 @@ Transform:
   - {fileID: 2952590510123542033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2828531503607214661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8803873316116458002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c679cccd3a940c4810a3f53daef6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInitializeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReleaseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  episodeData: {fileID: 11400000, guid: 8d47eda024b114795923da94a4d7026a, type: 2}
+  _title: 
+  _titlePanelPrefab: {fileID: 0}
 --- !u!1001 &9151369868330910
 PrefabInstance:
   m_ObjectHideFlags: 0

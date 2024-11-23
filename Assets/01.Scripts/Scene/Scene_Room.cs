@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Episode.Room
 {
-    public class Scene_Room : BaseScene
+    public class Scene_Room : EpisodeScene
     {
         [Space]
         [SerializeField] private Timer FemaleWakeUpTimer;
@@ -27,3 +27,4 @@ namespace Episode.Room
         }
     }
 }
+

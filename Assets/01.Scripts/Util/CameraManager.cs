@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
-using Febucci.UI.Core.Parsing;
+using Cinemachine;
 
 public class CameraManager : MonoSingleton<CameraManager>
 {
+    private const int FOCUSED_PRIORITY = 30;
+    private const int UNFOCUSED_PRIORITY = 1;
+
+    private CinemachineVirtualCamera currentVCam = null;
+
     private Camera _camera;
     public Camera Camera => _camera;
     public override void InitManager()
@@ -17,6 +20,17 @@ public class CameraManager : MonoSingleton<CameraManager>
     public void SettingCamera(Camera camera)
     {
         _camera = camera;
+    }
+
+    public void SetVirtualCamera(CinemachineVirtualCamera targetVCam)
+    {
+        if(currentVCam != null)
+            currentVCam.Priority = UNFOCUSED_PRIORITY;
+        
+        currentVCam = targetVCam;
+
+        if(currentVCam != null)
+            currentVCam.Priority = FOCUSED_PRIORITY;
     }
 
     public void ZoomInCamera(Vector3 startPos, Vector3 endPos, float zoomTime,Ease ease,Action callback = null)
