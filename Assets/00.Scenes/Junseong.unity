@@ -3482,6 +3482,7 @@ GameObject:
   - component: {fileID: 893069163}
   - component: {fileID: 893069165}
   - component: {fileID: 893069164}
+  - component: {fileID: 893069166}
   m_Layer: 0
   m_Name: TalkSlot (2)
   m_TagString: Untagged
@@ -3549,6 +3550,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893069162}
   m_CullTransparentMesh: 1
+--- !u!114 &893069166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893069162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8578e2b8b4709449ce4023bcb41fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1 &893675142
 GameObject:
   m_ObjectHideFlags: 0
@@ -5836,6 +5852,7 @@ GameObject:
   - component: {fileID: 1260515419}
   - component: {fileID: 1260515421}
   - component: {fileID: 1260515420}
+  - component: {fileID: 1260515422}
   m_Layer: 0
   m_Name: TalkSlot
   m_TagString: Untagged
@@ -5903,6 +5920,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260515418}
   m_CullTransparentMesh: 1
+--- !u!114 &1260515422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260515418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8578e2b8b4709449ce4023bcb41fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1 &1286496166
 GameObject:
   m_ObjectHideFlags: 0
@@ -7455,6 +7487,7 @@ GameObject:
   - component: {fileID: 1516645465}
   - component: {fileID: 1516645467}
   - component: {fileID: 1516645466}
+  - component: {fileID: 1516645468}
   m_Layer: 0
   m_Name: TalkSlot (3)
   m_TagString: Untagged
@@ -7522,6 +7555,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516645464}
   m_CullTransparentMesh: 1
+--- !u!114 &1516645468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516645464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8578e2b8b4709449ce4023bcb41fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1001 &1538486129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8784,6 +8832,7 @@ GameObject:
   - component: {fileID: 1792285639}
   - component: {fileID: 1792285641}
   - component: {fileID: 1792285640}
+  - component: {fileID: 1792285642}
   m_Layer: 0
   m_Name: TalkSlot (1)
   m_TagString: Untagged
@@ -8851,6 +8900,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792285638}
   m_CullTransparentMesh: 1
+--- !u!114 &1792285642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792285638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8578e2b8b4709449ce4023bcb41fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReturnTime: 0.3
+  DeleteDistance: 200
+  IsDelete: 0
 --- !u!1001 &1803634352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9545,6 +9609,7 @@ MonoBehaviour:
   onReleaseEvent:
     m_PersistentCalls:
       m_Calls: []
+  _camera: {fileID: 0}
   episodeData: {fileID: 0}
   _title: 
   _titlePanelPrefab: {fileID: 0}
