@@ -198,7 +198,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1013354356056065708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 953322404067529056}
+        m_TargetAssemblyTypeName: EpisodeSlotUI, Assembly-CSharp
+        m_MethodName: OnTouchStartEpisode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1673034131997862354
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2cc26b2cde6d446da3abb8070b42980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentEpisodeData: {fileID: 0}
   thumbnailImage: {fileID: 3601507627747650585}
   titleText: {fileID: 125664532357238819}
 --- !u!1 &4496158582883053561
