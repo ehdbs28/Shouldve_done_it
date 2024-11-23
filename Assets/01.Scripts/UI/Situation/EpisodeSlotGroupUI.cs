@@ -12,7 +12,7 @@ public class EpisodeSlotGroupUI : MonoBehaviourUI
             EpisodeDataSO episodeData = episodeDatas[i];
             EpisodeSlotUI ui = CreateEpisodeSlot(episodeData);
 
-            ui.SetEnable(DataManager.UserData.ProgressData.CurrentEpisodeIndex == 0);
+            ui.SetEnable(DataManager.UserData.ProgressData.CurrentEpisodeIndex == i);
         }
     }
     
