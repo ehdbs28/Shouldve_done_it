@@ -24,8 +24,11 @@ public class Timer : MonoBehaviour
 
     public void PauseTimer()
     {
-        StopCoroutine(TimerCo);
-        TimerCo = null;
+        if(TimerCo != null)
+        {
+            StopCoroutine(TimerCo);
+            TimerCo = null;
+        }
     }
 
     public void ResetTimer()

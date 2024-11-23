@@ -8,7 +8,7 @@ namespace Episode.Room
     {
         [Space]
         [SerializeField] private Timer FemaleWakeUpTimer;
-        [SerializeField] private Character FemaleCharacter;
+        [SerializeField] private FemaleCharacter FemaleCharacter;
 
         protected override void OnEpisodeStart()
         {
@@ -19,7 +19,7 @@ namespace Episode.Room
 
         private void Start()
         {
-            FemaleWakeUpTimer.OnTimeOverEvent.AddListener(WakeUpFemale);
+            FemaleWakeUpTimer.OnTimeOverEvent.AddListener(FemaleCharacter.WakeUp);
             StartFemaleWakeUpTimer();
         }
 
@@ -28,9 +28,9 @@ namespace Episode.Room
             FemaleWakeUpTimer.StartTimer();
         }
 
-        private void WakeUpFemale()
+        public void PauseFemaleWakeUpTimer()
         {
-            FemaleCharacter.GetAnim().SetTrigger("stand_up");
+            FemaleWakeUpTimer.PauseTimer();
         }
     }
 }

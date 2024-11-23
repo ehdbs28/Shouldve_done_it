@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace Episode.Room
@@ -16,6 +17,7 @@ namespace Episode.Room
         [Space]
         [SerializeField] private float DeleteDistance;
         [SerializeField] private bool IsDelete;
+        public UnityEvent OnDeleteEvent;
 
         protected override void Awake()
         {
@@ -67,6 +69,7 @@ namespace Episode.Room
 
             Rect.DOAnchorPos(Rect.anchoredPosition + 500f * Vector2.right, ReturnTime).OnComplete(() =>
             {
+                OnDeleteEvent?.Invoke();
                 Destroy(gameObject);
             });
         }

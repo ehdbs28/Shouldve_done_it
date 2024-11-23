@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Episode.Room
 {
@@ -11,12 +12,16 @@ namespace Episode.Room
         [SerializeField] protected int Priority;
         [SerializeField] private bool PriorityIncreaseObject;
 
+        public UnityEvent OnClickedEvent;
+
         protected virtual void OnMouseDown() 
         {
             if (Priority > CurrentPriority) return;
 
             if (PriorityIncreaseObject)
                 CurrentPriority++;
+
+            OnClickedEvent.Invoke();
         }
     }
 }

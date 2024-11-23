@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7d78256c4274bc341858c575aa6bf3c7
+guid: 238161d114f47a1489566892ed2c5fb4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -36,8 +36,8 @@ ModelImporter:
       name: Female_StandUp
       takeName: mixamo.com
       internalID: -203655887218126122
-      firstFrame: 108
-      lastFrame: 249
+      firstFrame: 0
+      lastFrame: 107
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -58,7 +58,7 @@ ModelImporter:
       curves: []
       events:
       - time: 1
-        functionName: OnStandUp
+        functionName: OnWakeUp
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

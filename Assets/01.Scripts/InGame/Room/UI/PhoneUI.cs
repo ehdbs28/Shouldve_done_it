@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 namespace Episode.Room
 {
@@ -9,13 +10,16 @@ namespace Episode.Room
     {
         [SerializeField] private float ShowTime;
 
+        [Space]
+        public UnityEvent OnDeleteTalkEvent;
+
         private Vector2 OriginPos;
 
         protected override void Awake()
         {
             base.Awake();
 
-            OriginPos = Rect.rect.position;
+            OriginPos = Rect.anchoredPosition;
         }
 
         public override void Show()
@@ -27,9 +31,12 @@ namespace Episode.Room
 
         public override void Hide()
         {
-            base.Hide();
+            Rect.DOAnchorPos(OriginPos, ShowTime).SetEase(Ease.InBack);
+        }
 
-            Rect.DOAnchorPos(Vector2.zero, ShowTime).SetEase(Ease.InBack);
+        public void OnDelete()
+        {
+            OnDeleteTalkEvent?.Invoke();
         }
     }
 }

@@ -29,7 +29,7 @@ public class EpisodeScene : BaseScene
         
     }
 
-    protected virtual void SetResult(string text, string author, bool success)
+    public virtual void SetResult(string text, string author, bool success)
     {
         StartCoroutine(ResultRoutine(success ? Scenes.Situation : Scenes.EpisodeCafe, text, author));
     }
