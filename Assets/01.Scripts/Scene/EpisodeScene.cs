@@ -24,4 +24,9 @@ public class EpisodeScene : BaseScene
     {
         
     }
+
+    protected virtual void Fail(string text, string author)
+    {
+        
+    }
 }

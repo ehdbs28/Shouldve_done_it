@@ -315,6 +315,8 @@ MonoBehaviour:
   _title: "\uADF8\uB140\uC640 \uB9CC\uB09C\uC9C0 \uC5BC\uB9C8 \uB418\uC9C0 \uC54A\uB358
     \uB0A0\n\uCE74\uD398\uC5D0\uC11C..."
   _titlePanelPrefab: {fileID: 5348039547804228864, guid: 7e230f93efb314f1fbd7877be814b370, type: 3}
+  femaleAnimator: {fileID: 3129144771006008550}
+  maleAnimator: {fileID: 8740854646392709235}
   femaleSpeechBubble: {fileID: 7150485916605887466}
   maleSpeechBubble: {fileID: 471694333755148602}
   firstChoice:
@@ -583,6 +585,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400046, guid: d18df5b376f9b1c41ac18ad439491ff3, type: 3}
   m_PrefabInstance: {fileID: 3129144770996566406}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &3129144771006008550 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: d18df5b376f9b1c41ac18ad439491ff3, type: 3}
+  m_PrefabInstance: {fileID: 3129144770996566406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3534900131707435733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -832,5 +839,10 @@ PrefabInstance:
 --- !u!4 &8740854646384988093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400046, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
+  m_PrefabInstance: {fileID: 8740854646385382675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8740854646392709235 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: b538e4dd12efa8a40ab7dd3a66d39dc7, type: 3}
   m_PrefabInstance: {fileID: 8740854646385382675}
   m_PrefabAsset: {fileID: 0}
