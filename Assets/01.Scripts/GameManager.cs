@@ -44,10 +44,10 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
-        _currentScene.Initialize();
 
         await ShowBlackAsync(false);
-        _currentScene.OnLoad();
+
+        _currentScene.Initialize();
         callback?.Invoke();
     }
     
