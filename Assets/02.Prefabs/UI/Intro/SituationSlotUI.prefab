@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6131160136635781642}
   - component: {fileID: 7158727271622406641}
+  - component: {fileID: 7396200421914118389}
   m_Layer: 5
   m_Name: SituationSlotUI
   m_TagString: Untagged
@@ -265,6 +266,18 @@ MonoBehaviour:
   currentSituationData: {fileID: 0}
   thumbnailImage: {fileID: 8306337881156036158}
   titleText: {fileID: 4828801535753050628}
+--- !u!225 &7396200421914118389
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163991917479142389}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8996145007567988190
 GameObject:
   m_ObjectHideFlags: 0

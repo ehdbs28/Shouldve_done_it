@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,8 +33,17 @@ public class SituationScene : BaseScene
     {
         Debug.Log("--->OnFinishCutscene");
 
+        StartCoroutine(FinishCutsceneRoutine(cutscene));
+    }
+    
+    private IEnumerator FinishCutsceneRoutine(Cutscene cutscene)
+    {
+        yield return StartCoroutine(GameManager.Instance.ShowBlackAsync(true));
+
         SetSituationUI();
         Destroy(cutscene.gameObject);
+
+        yield return StartCoroutine(GameManager.Instance.ShowBlackAsync(false));
     }
 
     private void SetSituationUI()
