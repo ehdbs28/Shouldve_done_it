@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneType: 3
   episodeName: "\uC5B8\uB144\uC774\uB0D0?"
+  episodeIndex: 2
   episodeThumbnail: {fileID: 0}
   episodePrefab: {fileID: 0}

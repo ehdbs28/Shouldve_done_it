@@ -9,7 +9,9 @@ using UnityEngine.UI;
 public class GameManager : MonoSingleton<GameManager>
 {
     [SerializeField] private List<BaseScene> _scenes;
+    
     private BaseScene _currentScene;
+    public BaseScene CurrentScene => _currentScene;
 
     private Scenes _currentSceneType;
     public Scenes CurrentSceneType => _currentSceneType;

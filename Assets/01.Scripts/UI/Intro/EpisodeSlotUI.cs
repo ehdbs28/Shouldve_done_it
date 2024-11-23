@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class EpisodeSlotUI : MonoBehaviourUI
 {
+    [SerializeField] GameObject dimedObject = null;
     [SerializeField] Image thumbnailImage = null;
     [SerializeField] Text titleText = null;
     
@@ -12,6 +13,11 @@ public class EpisodeSlotUI : MonoBehaviourUI
     {
         currentEpisodeData = episodeData;
         RefreshUI();
+    }
+
+    public void SetEnable(bool enable)
+    {
+        dimedObject.SetActive(!enable);
     }
 
     private void RefreshUI()

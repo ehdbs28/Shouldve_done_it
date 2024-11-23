@@ -10,14 +10,18 @@ public class EpisodeSlotGroupUI : MonoBehaviourUI
         for(int i = 0; i < episodeDatas.Count; ++ i)
         {
             EpisodeDataSO episodeData = episodeDatas[i];
-            CreateEpisodeSlot(episodeData);
+            EpisodeSlotUI ui = CreateEpisodeSlot(episodeData);
+
+            ui.SetEnable(DataManager.UserData.ProgressData.CurrentEpisodeIndex == i);
         }
     }
     
-    private void CreateEpisodeSlot(EpisodeDataSO episodeData)
+    private EpisodeSlotUI CreateEpisodeSlot(EpisodeDataSO episodeData)
     {
         EpisodeSlotUI episodeSlot = Instantiate(slotPrefab);
         episodeSlot.Initialize(episodeData);
         episodeSlot.transform.SetParent(transform);
+
+        return episodeSlot;
     }
 }

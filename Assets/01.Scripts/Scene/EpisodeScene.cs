@@ -26,25 +26,44 @@ public class EpisodeScene : BaseScene
 
     protected virtual void OnEpisodeStart()
     {
-        
     }
 
     public virtual void SetResult(string text, string author, bool success)
     {
-        StartCoroutine(ResultRoutine(success ? Scenes.Situation : Scenes.EpisodeCafe, text, author));
+        StartCoroutine(ResultRoutine(success ? Scenes.Situation : GameManager.Instance.CurrentSceneType, text, author));
     }
 
-    private IEnumerator ResultRoutine(Scenes sceneType, string text, string author)
+    private IEnumerator ResultRoutine(Scenes sceneType, string text = null, string author = null)
     {
-        var panel = Instantiate(_quotesPanelPrefab, GameManager.Instance.uiCanvas.transform);
-        panel.Show(text, author);
-
-        yield return new WaitForSeconds(5f);
-
-        GameManager.Instance.LoadSceneWithFade(sceneType, scene =>
+        if (text != null && author != null)
         {
-            panel.Close(true);
-        });
+            var panel = Instantiate(_quotesPanelPrefab, GameManager.Instance.uiCanvas.transform);
+            panel.Show(text, author);
+            
+            yield return new WaitForSeconds(5f);
+
+            GameManager.Instance.LoadSceneWithFade(sceneType, scene => {
+                panel.Close(true);
+
+                if(sceneType == Scenes.Situation)
+                    HandleSuccess(scene as SituationScene);
+            });
+
+            yield break;
+        }
+        
+        yield return new WaitForSeconds(5f);
+        
+        GameManager.Instance.LoadSceneWithFade(sceneType, scene =>
+            {
+                if(sceneType == Scenes.Situation)
+                    HandleSuccess(scene as SituationScene);
+            });
     }
     
+    private void HandleSuccess(SituationScene scene)
+    {
+        DataManager.UserData.ProgressData.CurrentEpisodeIndex = episodeData.episodeIndex + 1;
+        scene.StartSituation(DataManager.UserData.ProgressData.CurrentSituationData);
+    }
 }
