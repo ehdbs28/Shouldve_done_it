@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,33 +8,34 @@ public class TitlePanel : MonoBehaviour
 {
     [SerializeField] private Text _text;
 
-    private CanvasGroup _canvasGroup;
+    public CanvasGroup canvasGroup;
 
     private Action _callback;
     
-    private void Awake()
-    {
-        _canvasGroup = GetComponent<CanvasGroup>();
-    }
 
     public void Show(string text, Action callback = null)
     {
         _callback = callback;
         
-        var seq = DOTween.Sequence();
-        seq.Append(_canvasGroup.DOFade(1, 0.5f));
-        seq.AppendInterval(1f).OnComplete(Close);
-        _text.text = text;
         gameObject.SetActive(true);
+        canvasGroup.alpha = 1;
+        _text.text = text;
+        StartCoroutine(Seq());
     }
 
-    public void Close()
+    private IEnumerator Seq()
     {
-        _canvasGroup.DOFade(0, 0.5f)
+        yield return new WaitForSeconds(5f);
+        Close();
+    }
+
+    private void Close()
+    {
+        canvasGroup.DOFade(0, 2f)
             .OnComplete(() =>
             {
                 _callback?.Invoke();
-                Destroy(this.gameObject);
+                gameObject.SetActive(false);
             });
     }
 }

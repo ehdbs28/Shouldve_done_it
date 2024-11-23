@@ -30,19 +30,19 @@ public class GameManager : MonoSingleton<GameManager>
         SoundManager.Instance.InitManager();    
     }
 
-    public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> callback = null) where T : BaseScene
+    public void LoadSceneWithFade<T>(Scenes nextScene, Action<BaseScene> onLoadComplete = null, Action<BaseScene> onFinish = null) where T : BaseScene
     {
         int sceneIndex = (int)nextScene;
         if(_scenes.Count <= sceneIndex || sceneIndex < 0)
             return;
 
-        StartCoroutine(LoadSceneWithFadeRoutine(sceneIndex, callback));
+        StartCoroutine(LoadSceneWithFadeRoutine(sceneIndex, onLoadComplete, onFinish));
     }
 
-    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> callback = null)
-        => LoadSceneWithFade<BaseScene>(nextScene, callback);
+    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> onLoadComplete = null, Action<BaseScene> onFinish = null)
+        => LoadSceneWithFade<BaseScene>(nextScene, onLoadComplete, onFinish);
 
-    private IEnumerator LoadSceneWithFadeRoutine<T>(int sceneIndex, Action<T> callback = null) where T : BaseScene
+    private IEnumerator LoadSceneWithFadeRoutine<T>(int sceneIndex, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
     {
         yield return StartCoroutine(ShowBlackAsync(true));
         
@@ -53,10 +53,13 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
-        _currentScene.Initialize();
-        callback?.Invoke(_currentScene as T);
+        _currentScene.OnPreLoadScene();
+        onLoadComplete?.Invoke(_currentScene as T);
 
         yield return StartCoroutine(ShowBlackAsync(false));
+
+        _currentScene.Initialize();
+        onFinish?.Invoke(_currentScene as T);
     }
     
     public IEnumerator ShowBlackAsync(bool value)
