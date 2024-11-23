@@ -37,7 +37,7 @@ public class TextSpeech : MonoBehaviour
 
     public void AppearText(string text)
     {
-        text = $"<?startEvent>{text}<?endEvent><waitfor=0.3><?soundStopEvent>";
+        text = $"<?startEvent>{text}<?endEvent><waitfor=0.1><?soundStopEvent>";
         _typeWriter.ShowText(text);
         _typeWriter.onTextDisappeared.RemoveAllListeners();
     }
@@ -53,12 +53,12 @@ public class TextSpeech : MonoBehaviour
         switch (eventMarker.name)
         {
             case "startEvent":
-                // SoundManager.Instance.PlayTalkSFX();
+                SoundManager.Instance.PlayTalkSFX();
                 break;
             case "endEvent":
                 break;
             case "soundStopEvent":
-                // SoundManager.Instance.StopSFX();
+                SoundManager.Instance.StopSFX();
                 break;
         }
     }
