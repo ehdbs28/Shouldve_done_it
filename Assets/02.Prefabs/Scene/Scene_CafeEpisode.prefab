@@ -315,6 +315,7 @@ MonoBehaviour:
   _title: "\uADF8\uB140\uC640 \uB9CC\uB09C\uC9C0 \uC5BC\uB9C8 \uB418\uC9C0 \uC54A\uB358
     \uB0A0\n\uCE74\uD398\uC5D0\uC11C..."
   _titlePanelPrefab: {fileID: 5348039547804228864, guid: 7e230f93efb314f1fbd7877be814b370, type: 3}
+  _quotesPanelPrefab: {fileID: 30319007619424376, guid: a1c37a89bc9b24600a60703e74c1dc9f, type: 3}
   femaleAnimator: {fileID: 3129144771006008550}
   maleAnimator: {fileID: 8740854646392709235}
   femaleSpeechBubble: {fileID: 7150485916605887466}

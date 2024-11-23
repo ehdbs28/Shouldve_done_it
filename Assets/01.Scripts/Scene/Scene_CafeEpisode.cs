@@ -83,6 +83,12 @@ public class Scene_CafeEpisode : EpisodeScene
             femaleAnimator.SetTrigger(female_disbelief_hash);
             maleAnimator.SetTrigger(male_disbelief_hash);
             femaleSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, "그냥 말해본건데.. 관심이 있기는 해?");
+            
+            yield return new WaitForSeconds(2f);
+            
+            SetResult("여자의 마음은 바다처럼 깊고 이해하기 어렵다.", "Gabriel García Márquez", false);
         }
+
+        
     }
 }
