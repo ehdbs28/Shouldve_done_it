@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311935, g: 0.38074002, b: 0.3587273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -230,10 +230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scenes:
-  - {fileID: 1113259661166900587, guid: d7fe11d26cc744cb6aa6729793676501, type: 3}
+  - {fileID: 6218723915581671206, guid: d7fe11d26cc744cb6aa6729793676501, type: 3}
   - {fileID: 4659327347550119951, guid: dcf2569362bca4149b49263b32cdbd47, type: 3}
   - {fileID: 8465134998608046513, guid: e22c2fda2c3bc42c1b9d11d16c5acccf, type: 3}
-  - {fileID: 4659327347550119951, guid: dcf2569362bca4149b49263b32cdbd47, type: 3}
+  - {fileID: 6772924673304712174, guid: 5573499fcc51f6746991b64ee0c40465, type: 3}
   - {fileID: 931544247430691948, guid: b45e8821fa24a430393b805fdf38a627, type: 3}
   uiCanvas: {fileID: 636051549}
   _blackPanelPrefab: {fileID: 1042190017436086765, guid: 73097357ef75f4efbae82e69e48347f8, type: 3}

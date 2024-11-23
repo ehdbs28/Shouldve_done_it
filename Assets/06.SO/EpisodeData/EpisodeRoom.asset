@@ -16,4 +16,4 @@ MonoBehaviour:
   episodeName: "\uC5B8\uB144\uC774\uB0D0?"
   episodeIndex: 2
   episodeThumbnail: {fileID: 0}
-  episodePrefab: {fileID: 0}
+  episodePrefab: {fileID: 6772924673304712174, guid: 5573499fcc51f6746991b64ee0c40465, type: 3}

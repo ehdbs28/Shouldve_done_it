@@ -33,6 +33,15 @@ public class SituationScene : BaseScene
     {
         Debug.Log("--->OnFinishCutscene");
 
+        int currentEpisodeIndex = DataManager.UserData.ProgressData.CurrentEpisodeIndex;
+        if(currentEpisodeIndex >= currentSituationData.episodeDatas.Count)
+        {
+            DataManager.UserData.ProgressData.CurrentEpisodeIndex = 0;
+            DataManager.UserData.ProgressData.ClearedSituationList.Add(currentSituationData.situationName);
+            GameManager.Instance.LoadSceneWithFade(Scenes.Title);
+            return;
+        }
+
         StartCoroutine(FinishCutsceneRoutine(cutscene));
     }
     
