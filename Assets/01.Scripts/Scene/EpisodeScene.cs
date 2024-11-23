@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class EpisodeScene : BaseScene
 {
@@ -8,6 +10,8 @@ public class EpisodeScene : BaseScene
 
     [SerializeField] private TitlePanel _titlePanelPrefab;
     private TitlePanel _titlePanel;
+
+    [SerializeField] private QuotesPanel _quotesPanelPrefab;
 
     protected override void OnSceneInitialize()
     {
@@ -24,4 +28,21 @@ public class EpisodeScene : BaseScene
     {
         
     }
+
+    protected virtual void SetResult(string text, string author, bool success)
+    {
+        StartCoroutine(ResultRoutine(success ? Scenes.Situation : Scenes.EpisodeCafe, text, author));
+    }
+
+    private IEnumerator ResultRoutine(Scenes sceneType, string text, string author)
+    {
+        var panel = Instantiate(_quotesPanelPrefab, GameManager.Instance.uiCanvas.transform);
+        panel.Show(text, author);
+
+        yield return new WaitForSeconds(3f);
+
+        GameManager.Instance.LoadSceneWithFade(sceneType);
+        panel.Close();
+    }
+    
 }
