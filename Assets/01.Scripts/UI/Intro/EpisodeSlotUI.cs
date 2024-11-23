@@ -31,6 +31,8 @@ public class EpisodeSlotUI : MonoBehaviourUI
         if(currentEpisodeData == null)
             return;
         
-        GameManager.Instance.LoadSceneWithFade(currentEpisodeData.sceneType);
+        GameManager.Instance.LoadSceneWithFade(currentEpisodeData.sceneType, onFinish: scene => {
+            SoundManager.Instance.PlaySoundBGM();
+        });
     }
 }

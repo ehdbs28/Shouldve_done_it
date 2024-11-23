@@ -54,6 +54,7 @@ public class SituationSlotUI : MonoBehaviourUI
 
         // Set Episode
         // Show Episode Group UI
+        SoundManager.Instance.StopBGM();
         GameManager.Instance.LoadSceneWithFade<SituationScene>(Scenes.Situation, scene => {
             scene.StartSituation(currentSituationData);
         });

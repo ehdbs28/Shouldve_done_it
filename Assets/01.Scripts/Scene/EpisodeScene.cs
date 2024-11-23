@@ -65,5 +65,6 @@ public class EpisodeScene : BaseScene
     {
         DataManager.UserData.ProgressData.CurrentEpisodeIndex = episodeData.episodeIndex + 1;
         scene.StartSituation(DataManager.UserData.ProgressData.CurrentSituationData);
+        SoundManager.Instance.StopBGM();
     }
 }

@@ -135,6 +135,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3464246443435340621}
+        m_TargetAssemblyTypeName: MonoBehaviourUI, Assembly-CSharp
+        m_MethodName: PlayUISound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3464246443435340621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295e3dd556c149cd90296a29d4cba0b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiSoundName: ButtonSound2
   _text: {fileID: 4990392635603323962}
 --- !u!1 &8524230620378720574
 GameObject:

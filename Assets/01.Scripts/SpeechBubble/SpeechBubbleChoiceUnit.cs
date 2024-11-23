@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpeechBubbleChoiceUnit : MonoBehaviour
+public class SpeechBubbleChoiceUnit : MonoBehaviourUI
 {
     private SpeechBubble.ChoiceInfo _info;
     

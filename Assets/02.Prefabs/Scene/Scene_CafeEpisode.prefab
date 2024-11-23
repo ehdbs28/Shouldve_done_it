@@ -133,6 +133,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6530772085441738327}
+        m_TargetAssemblyTypeName: MonoBehaviourUI, Assembly-CSharp
+        m_MethodName: PlayUISound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &755112727609029754
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +490,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: FindDiffrentPanel, Assembly-CSharp
         m_MethodName: SetAnswer
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6530772085441738327}
+        m_TargetAssemblyTypeName: MonoBehaviourUI, Assembly-CSharp
+        m_MethodName: PlayUISound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -838,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3105f69b91a24cc4b131f825b15c52a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiSoundName: ButtonSound
   femaleRenderer: {fileID: 3129144771010130470}
   prevMat: {fileID: 2100000, guid: c4473c7d366204f3ca23e4a908d337b2, type: 2}
   initMat: {fileID: 2100000, guid: 9d0b798dd313ffd4e9e58bb4a5313b00, type: 2}
@@ -1251,6 +1276,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6530772085441738327}
+        m_TargetAssemblyTypeName: MonoBehaviourUI, Assembly-CSharp
+        m_MethodName: PlayUISound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

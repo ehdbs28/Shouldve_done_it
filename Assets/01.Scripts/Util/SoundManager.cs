@@ -128,6 +128,11 @@ public class SoundManager : MonoSingleton<SoundManager>
         }
     }
 
+    public void StopBGM()
+    {
+        _audioSources[(int)SoundEnum.BGM].Stop();
+    }
+
     public void StopSFX()
     {
         _audioSources[(int)SoundEnum.EFFECT].Stop();

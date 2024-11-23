@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class FindDiffrentPanel : MonoBehaviour
+public class FindDiffrentPanel : MonoBehaviourUI
 {
     public SkinnedMeshRenderer femaleRenderer;
 
@@ -31,11 +31,13 @@ public class FindDiffrentPanel : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             femaleRenderer.material = prevMat;
+            SoundManager.Instance.PlaySFX("ButtonSound2");
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
             femaleRenderer.material = initMat;
+            SoundManager.Instance.PlaySFX("ButtonSound2");
         }
 
         if (Input.GetKeyDown(KeyCode.Return))
@@ -50,6 +52,7 @@ public class FindDiffrentPanel : MonoBehaviour
                 }
             }
             callbacked = true;
+            SoundManager.Instance.PlaySFX("ButtonSound2");
         }
     }
 

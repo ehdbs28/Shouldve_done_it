@@ -81,6 +81,7 @@ public class Scene_CafeEpisode : EpisodeScene
             femaleAnimator.SetTrigger(female_clap_hash);
             maleAnimator.SetTrigger(male_clap_hash);
             femaleSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, "잘 보고 있었구나~!!");
+            SoundManager.Instance.PlaySFX("ClapSound");
         }
         else
         {
@@ -120,6 +121,7 @@ public class Scene_CafeEpisode : EpisodeScene
             femaleAnimator.SetTrigger(female_clap_hash);
             maleAnimator.SetTrigger(male_clap_hash);
             femaleSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, "맞아 ㅎㅎ 그냥 말해봤어~~");
+            SoundManager.Instance.PlaySFX("ClapSound");
         }
         else
         {
@@ -164,6 +166,7 @@ public class Scene_CafeEpisode : EpisodeScene
             femaleAnimator.SetTrigger(female_clap_hash);
             maleAnimator.SetTrigger(male_clap_hash);
             femaleSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, "음.. 정답은 아니지만 뭐 ㅋㅋ");
+            SoundManager.Instance.PlaySFX("ClapSound");
             
             yield return new WaitForSeconds(2f);
         
