@@ -79,4 +79,11 @@ public class CameraManager : MonoSingleton<CameraManager>
                 callback?.Invoke();
             });
     }
+
+    public void Shake(float duration, float strength = 0.1f, int vibrato = 10, float randomness = 90f)
+    {
+        if (_camera == null) return;
+
+        _camera.transform.DOShakePosition(duration, strength, vibrato, randomness, true);
+    }
 }
