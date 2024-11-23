@@ -30,13 +30,21 @@ public class GameManager : MonoSingleton<GameManager>
         SoundManager.Instance.InitManager();    
     }
 
-    public async Task LoadSceneWithFade(Scenes nextScene, Action callback = null)
+    public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
     {
         int sceneIndex = (int)nextScene;
         if(_scenes.Count <= sceneIndex || sceneIndex < 0)
             return;
 
-        await ShowBlackAsync(true);
+        StartCoroutine(LoadSceneWithFadeRoutine(sceneIndex, onLoadComplete, onFinish));
+    }
+
+    public void LoadSceneWithFade(Scenes nextScene, Action<BaseScene> onLoadComplete = null, Action<BaseScene> onFinish = null)
+        => LoadSceneWithFade<BaseScene>(nextScene, onLoadComplete, onFinish);
+
+    private IEnumerator LoadSceneWithFadeRoutine<T>(int sceneIndex, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
+    {
+        yield return StartCoroutine(ShowBlackAsync(true));
         
         if(_currentScene != null)
         {
@@ -45,22 +53,29 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
+        _currentScene.OnPreLoadScene();
+        onLoadComplete?.Invoke(_currentScene as T);
 
-        await ShowBlackAsync(false);
+        yield return StartCoroutine(ShowBlackAsync(false));
 
         _currentScene.Initialize();
-        callback?.Invoke();
+        onFinish?.Invoke(_currentScene as T);
     }
     
-    public async Task ShowBlackAsync(bool value)
+    public IEnumerator ShowBlackAsync(bool value)
     {
         if (_blackPanel == null)
         {
             _blackPanel = Instantiate(_blackPanelPrefab, uiCanvas.transform);
             _blackPanel.transform.SetAsLastSibling();
         }
-        
+
+        _blackPanel.gameObject.SetActive(true);
+
         // todo fade 넣기
+        const float FADE_DURATION = 0.5f;
+        yield return _blackPanel.DOFade(value ? 1 : 0, FADE_DURATION).WaitForCompletion();
+        _blackPanel.gameObject.SetActive(value);
     }
 
     public void SetLetterBoxSize(float newSize, float timer = 0.3f)

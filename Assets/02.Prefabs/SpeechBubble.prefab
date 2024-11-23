@@ -10263,8 +10263,7 @@ MonoBehaviour:
   useDefaultStyleSheet: 1
   styleSheet: {fileID: 0}
   databaseActions: {fileID: 11400000, guid: df98a8a40cf61466eb6db253fda7071a, type: 2}
-  defaultAppearancesTags:
-  - size
+  defaultAppearancesTags: []
   defaultDisappearancesTags:
   - fade
   defaultBehaviorsTags: []
@@ -10313,4 +10312,4 @@ MonoBehaviour:
   waitForLastCharacter: 1
   useTypewriterWaitForDisappearances: 1
   disappearanceWaitTime: 0.015
-  disappearanceSpeedMultiplier: 1
+  disappearanceSpeedMultiplier: 0.5

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "SO/Episode/EpisodeData")]
+[CreateAssetMenu(menuName = "SO/EpisodeData")]
 public class EpisodeDataSO : ScriptableObject
 {
     public Scenes sceneType = Scenes.None;

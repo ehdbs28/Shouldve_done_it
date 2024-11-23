@@ -3,15 +3,14 @@ using UnityEngine.UI;
 
 public class EpisodeSlotUI : MonoBehaviourUI
 {
-    [SerializeField] EpisodeDataSO currentEpisodeData = null;
-
-    [Space(15f)]
     [SerializeField] Image thumbnailImage = null;
     [SerializeField] Text titleText = null;
+    
+    private EpisodeDataSO currentEpisodeData = null;
 
-    public override void Show()
+    public void Initialize(EpisodeDataSO episodeData)
     {
-        base.Show();
+        currentEpisodeData = episodeData;
         RefreshUI();
     }
 
