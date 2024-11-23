@@ -6,13 +6,15 @@ namespace Episode.Room
 {
     public class Phone : ClickableObject
     {
+        [SerializeField] private PhoneUI PhoneUI;
+
         protected override void OnMouseDown()
         {
             if (Priority > CurrentPriority) return;
 
             base.OnMouseDown();
 
-            Debug.Log("click phone");
+            PhoneUI.Show();
         }
     }
 }
