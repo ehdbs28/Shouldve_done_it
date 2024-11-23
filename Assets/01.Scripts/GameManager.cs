@@ -30,7 +30,7 @@ public class GameManager : MonoSingleton<GameManager>
         SoundManager.Instance.InitManager();    
     }
 
-    public void LoadSceneWithFade<T>(Scenes nextScene, Action<BaseScene> onLoadComplete = null, Action<BaseScene> onFinish = null) where T : BaseScene
+    public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
     {
         int sceneIndex = (int)nextScene;
         if(_scenes.Count <= sceneIndex || sceneIndex < 0)
