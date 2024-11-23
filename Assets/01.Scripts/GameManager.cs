@@ -27,6 +27,7 @@ public class GameManager : MonoSingleton<GameManager>
     public override void InitManager()
     {
         TextManager.Instance.InitManager();
+        SoundManager.Instance.InitManager();    
     }
 
     public async Task LoadSceneWithFade(Scenes nextScene, Action callback = null)
