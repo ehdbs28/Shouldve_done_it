@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Scene_WalkEpisode : EpisodeScene
@@ -11,6 +12,9 @@ public class Scene_WalkEpisode : EpisodeScene
     
     public Animator maleAnimator;
     public Animator femaleAnimator;
+
+    public GameObject mark;
+    public Image markImage;
 
     public readonly int idleHash = Animator.StringToHash("idle");
     
@@ -88,6 +92,7 @@ public class Scene_WalkEpisode : EpisodeScene
         }
 
         remainReactionTime -= Time.deltaTime;
+        markImage.fillAmount = remainReactionTime / _curEvent.interactTime;
         
         if (remainReactionTime > 0f)
         {
@@ -102,13 +107,15 @@ public class Scene_WalkEpisode : EpisodeScene
 
     private void EventProcess()
     {
-        maleAnimator.SetBool(idleHash, false);
-        femaleAnimator.SetBool(idleHash, false);
+        maleAnimator.SetBool(idleHash, true);
+        femaleAnimator.SetBool(idleHash, true);
         
         var eventIdx = Random.Range(0, events.Count);
         _curEvent = events[eventIdx];
 
         remainReactionTime = _curEvent.interactTime;
+        mark.SetActive(true);
+        markImage.fillAmount = 1;
         
         _curEvent.OnProcess();
     }
@@ -116,17 +123,25 @@ public class Scene_WalkEpisode : EpisodeScene
     public override void SetResult(string text, string author, bool success)
     {
         _callbacked = true;
+        mark.SetActive(false);
         
         _curEvent.OnResult(success);
 
         if (success && (text == null || author == null))
         {
-            _isMoving = true;
-            maleAnimator.SetBool(idleHash, true);
-            femaleAnimator.SetBool(idleHash, true);
+            StartCoroutine(Delay());
+            
             return;
         }
         
         base.SetResult(text, author, success);
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5f);
+        maleAnimator.SetBool(idleHash, false);
+        femaleAnimator.SetBool(idleHash, false);
+        _isMoving = true;
     }
 }

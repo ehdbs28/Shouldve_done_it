@@ -80,10 +80,15 @@ public class CameraManager : MonoSingleton<CameraManager>
             });
     }
 
-    public void Shake(float duration, float strength = 0.1f, int vibrato = 10, float randomness = 90f)
+    public void Shake(float duration, float strength = 0.1f)
     {
         if (_camera == null) return;
 
-        _camera.transform.DOShakePosition(duration, strength, vibrato, randomness, true);
+        var initPos = _camera.transform.position;
+
+        var seq = DOTween.Sequence();
+        seq.Append(_camera.transform.DOMove(initPos + new Vector3(0, strength, 0), duration / 3f));
+        seq.Append(_camera.transform.DOMove(initPos - new Vector3(0, strength, 0), duration / 3f));
+        seq.Append(_camera.transform.DOMove(initPos, duration / 3f));
     }
 }

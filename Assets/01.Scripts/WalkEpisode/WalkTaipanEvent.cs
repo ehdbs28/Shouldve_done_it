@@ -22,7 +22,7 @@ public class WalkTaipanEvent : WalkEpisodeEvent
         
         walk.femaleAnimator.SetTrigger(walk.female_terrified);
         
-        CameraManager.Instance.Shake(0.3f);
+        CameraManager.Instance.Shake(0.2f, 0.3f);
     }
 
     public override void OnResult(bool success)
