@@ -152,6 +152,7 @@ Transform:
   - {fileID: 4800859751111088739}
   - {fileID: 4161138092261550873}
   - {fileID: 701090360034923339}
+  - {fileID: 7488082012976832493}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8465134998608046513
@@ -185,8 +186,9 @@ MonoBehaviour:
   mark: {fileID: 6740187653902579262}
   markImage: {fileID: 3088456104829879197}
   movingTime: 30
-  eventInterval: 10
+  eventInterval: 7
   events:
+  - {fileID: 9106141501295025396}
   - {fileID: 8830681197914556382}
 --- !u!1 &803639247272616606
 GameObject:
@@ -232,9 +234,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb46f0a084fb4c7c96bee85978fd50e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  successDelay: 5
   interactTime: 1
-  failText: "\uBC40 \uC870\uC2EC\uD558\uC138\uC694 !!!!"
-  failAuthor: "\uBC15\uC138\uD6C8"
+  failText: "\uC704\uD5D8\uD55C \uC77C\uC740 \uC5B8\uC81C\uB098 \uCC3E\uC544\uC62C
+    \uC218 \uC788\uB2E4. \uC911\uC694\uD55C \uAC74 \uADF8 \uC21C\uAC04\uC744 \uB9C8\uC8FC\uD558\uB294
+    \uC6B0\uB9AC\uC758 \uC6A9\uAE30\uB2E4."
+  failAuthor: Daniel Croft
   taipanPrefab: {fileID: 191139712265525777, guid: 13529be2286c34b6890ac96210e837ef, type: 3}
 --- !u!1 &2358168179877711392
 GameObject:
@@ -1023,6 +1028,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 288}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6909195715716127567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7488082012976832493}
+  - component: {fileID: 9106141501295025396}
+  m_Layer: 0
+  m_Name: GialEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7488082012976832493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909195715716127567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2347993191513497466}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9106141501295025396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909195715716127567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b382773f7b4a8598f2a468c2db9cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  successDelay: 1
+  interactTime: 5
+  failText: "\uC9C0\uB098\uAC00\uB294 \uBC14\uB78C\uCC98\uB7FC \uC2A4\uCCD0\uAC00\uB294
+    \uC778\uC5F0, \uB108\uBB34 \uAC00\uAE4C\uC774 \uB2E4\uAC00\uC11C\uBA74 \uD718\uB9D0\uB9B4
+    \uC218\uB3C4 \uC788\uB2E4."
+  failAuthor: Alexander Graves
+  girlPrefab: {fileID: 6019238490921591706, guid: 23da99e3b92e64808a862faf09b9440e, type: 3}
 --- !u!1 &7388759700193016310
 GameObject:
   m_ObjectHideFlags: 0
