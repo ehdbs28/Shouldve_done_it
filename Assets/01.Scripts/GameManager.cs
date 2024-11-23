@@ -53,11 +53,10 @@ public class GameManager : MonoSingleton<GameManager>
         }
 
         _currentScene = Instantiate(_scenes[sceneIndex]);
-
-        yield return StartCoroutine(ShowBlackAsync(false));
-
         _currentScene.Initialize();
         callback?.Invoke(_currentScene as T);
+
+        yield return StartCoroutine(ShowBlackAsync(false));
     }
     
     public IEnumerator ShowBlackAsync(bool value)

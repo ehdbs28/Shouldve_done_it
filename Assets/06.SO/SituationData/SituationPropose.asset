@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SituationPropose
   m_EditorClassIdentifier: 
   situationName: "\uD504\uB7EC\uD3EC\uC988 \uC778\uC0DD\uC874\uB9DD"
-  situationThumbnail: {fileID: 0}
-  cutscenePrefab: {fileID: 7568815717836211533, guid: 70c317a2ae6974cda8253f1a52ddbcdf, type: 3}
+  situationThumbnail: {fileID: 21300000, guid: 5c26933717daa4b458f61c4805498471, type: 3}
+  cutscenePrefab: {fileID: 6419196321845964295, guid: 1cc14c69ea3e94dcaa45b90a94ce2a8b, type: 3}
   episodeDatas:
   - {fileID: 11400000, guid: c2689adfab57d40d6876b3da2c8a16bb, type: 2}
   - {fileID: 11400000, guid: 8d47eda024b114795923da94a4d7026a, type: 2}
