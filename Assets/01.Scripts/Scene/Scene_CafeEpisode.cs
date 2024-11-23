@@ -19,6 +19,8 @@ public class Scene_CafeEpisode : EpisodeScene
     private bool _callbacked;
     private bool _success;
 
+    private int tempAnswer;
+
     private readonly int female_disbelief_hash = Animator.StringToHash("female_disbelief");
     private readonly int female_clap_hash = Animator.StringToHash("female_clap");
     private readonly int male_disbelief_hash = Animator.StringToHash("male_disbelief");
@@ -140,8 +142,8 @@ public class Scene_CafeEpisode : EpisodeScene
         
         _callbacked = false;
         var selectIdx = 0;
-        var answer = Random.Range(0, secondChoice.Length);
-        secondChoice[answer].answer = true;
+        tempAnswer = Random.Range(0, secondChoice.Length);
+        secondChoice[tempAnswer].answer = true;
         maleSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Choice, true, choices: secondChoice, selectChoiceCallback:
             (success, select) =>
             {

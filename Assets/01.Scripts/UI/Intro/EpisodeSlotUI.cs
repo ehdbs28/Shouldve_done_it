@@ -14,6 +14,11 @@ public class EpisodeSlotUI : MonoBehaviourUI
         RefreshUI();
     }
 
+    public void SetEnable(bool enable)
+    {
+
+    }
+
     private void RefreshUI()
     {
         thumbnailImage.sprite = currentEpisodeData.episodeThumbnail;

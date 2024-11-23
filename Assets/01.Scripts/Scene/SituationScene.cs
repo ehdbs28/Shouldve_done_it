@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SituationScene : BaseScene
@@ -14,9 +12,16 @@ public class SituationScene : BaseScene
     public void StartSituation(SituationDataSO situationData)
     {
         currentSituationData = situationData;
+        DataManager.UserData.ProgressData.CurrentSituationData = currentSituationData;
 
         sceneUI.SetActive(false);
         backgroundImage.sprite = situationData.situationThumbnail;
+
+        if(DataManager.UserData.ProgressData.CurrentEpisodeIndex != 0)
+        {
+            SetSituationUI();
+            return;
+        }
 
         Cutscene cutscene = Instantiate(currentSituationData.cutscenePrefab);
         cutscene.Play(OnFinishCutscene);
@@ -25,9 +30,14 @@ public class SituationScene : BaseScene
     private void OnFinishCutscene(Cutscene cutscene)
     {
         Debug.Log("--->OnFinishCutscene");
+
+        SetSituationUI();
+        Destroy(cutscene.gameObject);
+    }
+
+    private void SetSituationUI()
+    {
         sceneUI.SetActive(true);
         episodeSlotGroupUI.Initialize(currentSituationData.episodeDatas);
-
-        Destroy(cutscene.gameObject);
     }
 }

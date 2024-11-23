@@ -41,10 +41,17 @@ public class EpisodeScene : BaseScene
 
         yield return new WaitForSeconds(5f);
 
-        GameManager.Instance.LoadSceneWithFade(sceneType, scene =>
-        {
+        GameManager.Instance.LoadSceneWithFade(sceneType, scene => {
             panel.Close(true);
+
+            if(sceneType == Scenes.Situation)
+                HandleSuccess(scene as SituationScene);
         });
     }
     
+    private void HandleSuccess(SituationScene scene)
+    {
+        DataManager.UserData.ProgressData.CurrentEpisodeIndex = episodeData.episodeIndex + 1;
+        scene.StartSituation(DataManager.UserData.ProgressData.CurrentSituationData);
+    }
 }

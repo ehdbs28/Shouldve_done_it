@@ -19,11 +19,17 @@ public class SituationSlotUI : MonoBehaviourUI
     {
         thumbnailImage.sprite = currentSituationData.situationThumbnail;
         titleText.text = currentSituationData.situationName;
+
+        if(DataManager.UserData.ProgressData.ClearedSituationList.Contains(currentSituationData.situationName))
+            Debug.Log("->Set Dimed");
     }
 
     public void OnTouchStartSituation()
     {
         if(currentSituationData == null)
+            return;
+
+        if (DataManager.UserData.ProgressData.ClearedSituationList.Contains(currentSituationData.situationName))
             return;
 
         // Set Episode
