@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 namespace Episode.Room
 {
@@ -15,12 +16,23 @@ namespace Episode.Room
 
         [SerializeField] private SpeechBubble ShowDeletingSpeechBubble;
         [SerializeField] private SpeechBubble ShowPhoneSpeechBubble;
+        public PlayableDirector PD;
 
         public void WakeUp()
         {
-            GetAnim().SetTrigger("wake_up");
+            ClickableObject.CurrentPriority = -1;
 
             PhoneUI.Hide();
+
+            if (MaleCharacter.IsDeletingTalk)
+            {
+                GetAnim().SetTrigger("wake_up");
+            }
+            else
+            {
+                //stand up
+                StandUp();
+            }
         }
 
         public void OnWakeUp()
@@ -35,7 +47,7 @@ namespace Episode.Room
             else
             {
                 //stand up
-                StandUp();
+                //StandUp();
             }
         }
 
@@ -48,41 +60,56 @@ namespace Episode.Room
 
         public void StandUp()
         {
-            GetAnim().SetTrigger("stand_up");
+            PD.Play();
+
+            //GetAnim().SetTrigger("stand_up");
+        }
+
+        public void CheckPhone()
+        {
+            StartCoroutine(CheckPhoneCo());
+        }
+
+        private IEnumerator CheckPhoneCo()
+        {
+            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "이 ㅅㄲ 바람피고있었네...");
+
+            yield return new WaitForSeconds(2f);
+
+            Room.SetResult("모르는 것은 때로 축복이지만, 알게 된 후에는 지혜로 바꿔야 한다.", "Rowan Blake", false);
         }
 
         public void OnStandUp()
         {
-            GetAnim().SetTrigger("walk");
-            
+            //GetAnim().SetTrigger("walk");
+
             //go to phone
-            var seq = DOTween.Sequence();
-            seq.Append(transform.DOMove(MovePoints[0].position, Vector3.Distance(MovePoints[0].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
-            seq.Join(transform.DORotate(MovePoints[0].eulerAngles, 0.1f)).SetEase(Ease.Linear);
-            seq.Append(transform.DOMove(MovePoints[1].position, Vector3.Distance(MovePoints[1].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
-            seq.Join(transform.DORotate(MovePoints[1].eulerAngles, 0.1f)).SetEase(Ease.Linear);
-            seq.Append(transform.DOMove(MovePoints[2].position, Vector3.Distance(MovePoints[2].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
-            seq.Join(transform.DORotate(MovePoints[2].eulerAngles, 0.1f)).SetEase(Ease.Linear);
-            seq.AppendCallback(() =>
-            {
-                GetAnim().SetTrigger("idle");
-            });
-            seq.Append(transform.DOMove(MovePoints[3].position, Vector3.Distance(MovePoints[3].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
-            seq.Join(transform.DORotate(MovePoints[3].eulerAngles, 0.1f)).SetEase(Ease.Linear);
-            seq.AppendCallback(() =>
-            {
-                //start talk
-                ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "이 ㅅㄲ 바람피고있었네...");
-            });
-            seq.AppendInterval(2f);
-            seq.AppendCallback(() =>
-            {
-                Room.SetResult("모르는 것은 때로 축복이지만, 알게 된 후에는 지혜로 바꿔야 한다.", "Rowan Blake", false);
-            });
+            //var seq = DOTween.Sequence();
+            //seq.Append(transform.DOMove(MovePoints[0].position, Vector3.Distance(MovePoints[0].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
+            //seq.Join(transform.DORotate(MovePoints[0].eulerAngles, 0.1f)).SetEase(Ease.Linear);
+            //seq.Append(transform.DOMove(MovePoints[1].position, Vector3.Distance(MovePoints[1].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
+            //seq.Join(transform.DORotate(MovePoints[1].eulerAngles, 0.1f)).SetEase(Ease.Linear);
+            //seq.Append(transform.DOMove(MovePoints[2].position, Vector3.Distance(MovePoints[2].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
+            //seq.Join(transform.DORotate(MovePoints[2].eulerAngles, 0.1f)).SetEase(Ease.Linear);
+            //seq.AppendCallback(() =>
+            //{
+            //    GetAnim().SetTrigger("idle");
+            //});
+            //seq.Append(transform.DOMove(MovePoints[3].position, Vector3.Distance(MovePoints[3].position, transform.position) / MoveSpeed)).SetEase(Ease.Linear);
+            //seq.Join(transform.DORotate(MovePoints[3].eulerAngles, 0.1f)).SetEase(Ease.Linear);
+            //seq.AppendCallback(() =>
+            //{
+            //    //start talk
+            //    ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "이 ㅅㄲ 바람피고있었네...");
+            //});
+            //seq.AppendInterval(2f);
+            //seq.AppendCallback(() =>
+            //{
+            //    Room.SetResult("모르는 것은 때로 축복이지만, 알게 된 후에는 지혜로 바꿔야 한다.", "Rowan Blake", false);
+            //});
 
-            seq.SetAutoKill(true);
-
-            ClickableObject.CurrentPriority = -1;
+            //seq.SetAutoKill(true);
+            //PD.Play();
         }
     }
 }
