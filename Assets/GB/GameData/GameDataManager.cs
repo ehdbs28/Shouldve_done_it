@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Data;
-//using GB;
+
 public class GameDataManager : MonoSingleton<GameDataManager>
 {
  

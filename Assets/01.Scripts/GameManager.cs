@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +11,11 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField] private List<BaseScene> _scenes;
     private BaseScene _currentScene;
     
-    [SerializeField] private Canvas _uiCanvas;
+    public Canvas uiCanvas;
     [SerializeField] private Image _blackPanelPrefab;
+
+    [SerializeField] private RectTransform _topLetterBox;
+    [SerializeField] private RectTransform _bottomLetterBox;
     
     private Image _blackPanel;
     
@@ -43,6 +47,7 @@ public class GameManager : MonoSingleton<GameManager>
         _currentScene.Initialize();
 
         await ShowBlackAsync(false);
+        _currentScene.OnLoad();
         callback?.Invoke();
     }
     
@@ -50,11 +55,16 @@ public class GameManager : MonoSingleton<GameManager>
     {
         if (_blackPanel == null)
         {
-            _blackPanel = Instantiate(_blackPanelPrefab, _uiCanvas.transform);
+            _blackPanel = Instantiate(_blackPanelPrefab, uiCanvas.transform);
             _blackPanel.transform.SetAsLastSibling();
         }
         
         // todo fade 넣기
+    }
+
+    public void SetLetterBoxSize(float newSize, float timer = 0.3f)
+    {
+        _topLetterBox.DOSizeDelta(new Vector2(0, newSize), timer);
     }
 
 }

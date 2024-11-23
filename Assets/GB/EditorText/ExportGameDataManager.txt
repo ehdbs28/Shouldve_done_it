@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Data;
-using GB;
-public class GameDataManager : AutoSingleton<GameDataManager>
+
+public class GameDataManager : MonoSingleton<GameDataManager>
 {
  
     private void Awake()
@@ -15,21 +15,21 @@ public class GameDataManager : AutoSingleton<GameDataManager>
 
 	public static bool ContainsTable(TABLE tableID)
     {
-        return I._Tables.ContainsKey(tableID);
+        return Instance._Tables.ContainsKey(tableID);
     }
 
 
     public static GameData GetTable(TABLE tableID)
     {
-        if (I._Tables.ContainsKey(tableID) == false)
+        if (Instance._Tables.ContainsKey(tableID) == false)
         {
             TextAsset assets = UnityEngine.Resources.Load<TextAsset>("Json/" + tableID.ToString());
-            TABLE type = I.StringToEnum(assets.name);
-            I._Tables[type] = (GameData)I.GetJsonData(type, assets.text);
+            TABLE type = Instance.StringToEnum(assets.name);
+            Instance._Tables[type] = (GameData)Instance.GetJsonData(type, assets.text);
         }
 
-        if (I._Tables.ContainsKey(tableID) == false) return null;
-        return I._Tables[tableID];
+        if (Instance._Tables.ContainsKey(tableID) == false) return null;
+        return Instance._Tables[tableID];
     }
 
 
@@ -130,6 +130,10 @@ $CASE$
         return double.Parse(val.ToString(), System.Globalization.CultureInfo.InvariantCulture);
     }
 
+    public override void InitManager()
+    {
+        
+    }
 }
 
 public abstract class GameData
