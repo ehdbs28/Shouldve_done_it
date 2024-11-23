@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,9 @@ public class GameManager : MonoSingleton<GameManager>
     
     [SerializeField] private Canvas _uiCanvas;
     [SerializeField] private Image _blackPanelPrefab;
+
+    [SerializeField] private RectTransform _topLetterBox;
+    [SerializeField] private RectTransform _bottomLetterBox;
     
     private Image _blackPanel;
     
@@ -43,6 +47,11 @@ public class GameManager : MonoSingleton<GameManager>
         }
         
         // todo fade 넣기
+    }
+
+    public void SetLetterBoxSize(float newSize, float timer = 0.3f)
+    {
+        _topLetterBox.DOSizeDelta(new Vector2(0, newSize), timer);
     }
 
 }
