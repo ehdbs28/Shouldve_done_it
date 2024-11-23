@@ -1,19 +1,22 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class BaseScene : MonoBehaviour
 {
-    [SerializeField, TextArea] private string _title;
+    [SerializeField] UnityEvent onInitializeEvent = null;
+    [SerializeField] UnityEvent onReleaseEvent = null;
 
-    [SerializeField] private TitlePanel _titlePanelPrefab;
-    private TitlePanel _titlePanel;
-
-    public virtual void OnLoad()
+    protected virtual void OnSceneInitialize() { }
+    public void Initialize()
     {
-        if (_titlePanel == null)
-        {
-            _titlePanel = Instantiate(_titlePanelPrefab, GameManager.Instance.uiCanvas.transform);
-        }
-        _titlePanelPrefab.Show(_title);
+        OnSceneInitialize();
+        onInitializeEvent?.Invoke();
+    }
+
+    protected virtual void OnSceneRelease() {}
+    public void Release()
+    {
+        OnSceneRelease();
+        onReleaseEvent?.Invoke();
     }
 }

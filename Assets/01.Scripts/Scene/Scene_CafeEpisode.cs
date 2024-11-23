@@ -1,4 +1,4 @@
-public class Scene_CafeEpisode : BaseScene
+public class Scene_CafeEpisode : EpisodeScene
 {
     
 }

@@ -8,20 +8,7 @@ public class TextSpeech : MonoBehaviour
 {
     private TextAnimator_TMP _textAnimator;
     private TypewriterByCharacter _typeWriter;
-    public TypewriterByCharacter TypeWriter
-    {
-        get
-        {
-            if (_typeWriter == null)
-            {
-                Transform bodyTextTrm = transform.Find("Canvas/BodyText");
-        
-                _typeWriter = bodyTextTrm.GetComponent<TypewriterByCharacter>(); 
-            }
 
-            return _typeWriter;
-        }
-    }
     public void Setting()
     {
         Transform canvasTrm = transform.Find("Canvas");
@@ -35,15 +22,20 @@ public class TextSpeech : MonoBehaviour
 
     public void OnEnable()
     {
-        TypeWriter.onMessage.AddListener(CallMessageEvent);
+        _typeWriter.onMessage.AddListener(CallMessageEvent);
     }
 
     public void OnDisable()
     {
-        TypeWriter.onMessage.RemoveListener(CallMessageEvent);
+        _typeWriter.onMessage.RemoveListener(CallMessageEvent);
+    }    
+    public void Awake()
+    {
+        _textAnimator = GetComponent<TextAnimator_TMP>(); 
+        _typeWriter = GetComponent<TypewriterByCharacter>(); 
     }
 
-    public void AppearText(string titleText, string text)
+    public void AppearText(string text)
     {
         text = $"<?startEvent>{text}<?endEvent><waitfor=0.3><?soundStopEvent>";
         _typeWriter.ShowText(text);
