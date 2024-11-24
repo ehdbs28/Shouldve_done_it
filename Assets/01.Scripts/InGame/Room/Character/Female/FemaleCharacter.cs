@@ -74,11 +74,11 @@ namespace Episode.Room
 
         private IEnumerator CheckPhoneCo()
         {
-            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¶ï¿½ï¿½Ç°ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½...");
+            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "³Ê ¹¹ÇÏ³Ä...?");
 
             yield return new WaitForSeconds(2f);
 
-            Room.SetResult("ï¿½ð¸£´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½àº¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ë°ï¿½ ï¿½ï¿½ ï¿½Ä¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½ ï¿½Ñ´ï¿½.", "Rowan Blake", false);
+            Room.SetResult("µéÅ² Àß¸øÀº º¯¸íÀÌ ¾Æ´Ñ ´ë°¡¸¦ ¿ä±¸ÇÑ´Ù.", "Rowan Blake", false);
         }
 
         public void OnStandUp()
@@ -102,12 +102,12 @@ namespace Episode.Room
             //seq.AppendCallback(() =>
             //{
             //    //start talk
-            //    ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¶ï¿½ï¿½Ç°ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½...");
+            //    ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "?? ???? ???????????...");
             //});
             //seq.AppendInterval(2f);
             //seq.AppendCallback(() =>
             //{
-            //    Room.SetResult("ï¿½ð¸£´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½àº¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Ë°ï¿½ ï¿½ï¿½ ï¿½Ä¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½ ï¿½Ñ´ï¿½.", "Rowan Blake", false);
+            //    Room.SetResult("??? ???? ???? ????????, ??? ?? ?¨¨??? ?????? ???? ???.", "Rowan Blake", false);
             //});
 
             //seq.SetAutoKill(true);

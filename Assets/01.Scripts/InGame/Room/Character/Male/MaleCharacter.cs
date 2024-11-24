@@ -16,7 +16,7 @@ namespace Episode.Room
 
         public void SuccessEnding()
         {
-            Room.SetResult("¸ğ¸£´Â °ÍÀÌ ¶§·Î´Â ¾àÀÌ µÉ ¼ö µµ ÀÖ´Ù.", "Adrian Frost", true);
+            Room.SetResult("ëª¨ë¥´ëŠ” ê²ƒì´ ë•Œë¡œëŠ” ì•½ì´ ë  ìˆ˜ë„ ìˆë‹¤.", "Adrian Frost", true);
         }
     }
 }
