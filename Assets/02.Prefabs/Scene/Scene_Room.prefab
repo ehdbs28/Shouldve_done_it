@@ -4156,6 +4156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority: 1
   PriorityIncreaseObject: 0
+  soundName: ButtonSound2
   OnClickedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7094,6 +7095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority: 0
   PriorityIncreaseObject: 1
+  soundName: ButtonSound2
   OnClickedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7135,6 +7137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority: 1
   PriorityIncreaseObject: 0
+  soundName: Switch
   OnClickedEvent:
     m_PersistentCalls:
       m_Calls:

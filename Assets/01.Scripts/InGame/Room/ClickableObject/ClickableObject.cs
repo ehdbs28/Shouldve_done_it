@@ -11,6 +11,7 @@ namespace Episode.Room
 
         [SerializeField] protected int Priority;
         [SerializeField] private bool PriorityIncreaseObject;
+        [SerializeField] private string soundName = null;
 
         public UnityEvent OnClickedEvent;
 
@@ -22,6 +23,7 @@ namespace Episode.Room
                 CurrentPriority++;
 
             OnClickedEvent.Invoke();
+            SoundManager.Instance.PlaySFX(soundName);
         }
     }
 }

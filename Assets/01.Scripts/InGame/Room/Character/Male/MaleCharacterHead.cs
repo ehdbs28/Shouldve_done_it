@@ -16,6 +16,8 @@ namespace Episode.Room
                 OwnerCharacter.GetAnim().SetTrigger("stand_up");
                 OwnerCharacter.GetLeftArmIK().weight = 0.0f;
                 GetComponent<Collider>().enabled = false;
+
+                SoundManager.Instance.PlaySFX("Hit");
             }
         }
     }
