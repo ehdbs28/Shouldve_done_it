@@ -16,6 +16,7 @@ public class SituationScene : BaseScene
         DataManager.UserData.ProgressData.CurrentSituationData = currentSituationData;
 
         sceneUI.SetActive(false);
+        episodeSlotGroupUI.gameObject.SetActive(false);
         backgroundImage.sprite = situationData.situationThumbnail;
 
         int currentEpisodeIndex = DataManager.UserData.ProgressData.CurrentEpisodeIndex;
@@ -39,6 +40,8 @@ public class SituationScene : BaseScene
             DataManager.UserData.ProgressData.CurrentEpisodeIndex = 0;
             DataManager.UserData.ProgressData.ClearedSituationList.Add(currentSituationData.situationName);
             GameManager.Instance.LoadSceneWithFade(Scenes.Title);
+            Destroy(cutscene.gameObject);
+
             return;
         }
 
@@ -58,6 +61,8 @@ public class SituationScene : BaseScene
     private void SetSituationUI()
     {
         sceneUI.SetActive(true);
+        episodeSlotGroupUI.gameObject.SetActive(true);
+
         episodeSlotGroupUI.Initialize(currentSituationData.episodeDatas);
     }
 }

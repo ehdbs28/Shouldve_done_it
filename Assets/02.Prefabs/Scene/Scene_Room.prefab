@@ -3080,7 +3080,7 @@ MonoBehaviour:
       m_Calls: []
   _camera: {fileID: 0}
   episodeData: {fileID: 11400000, guid: 493714d3743c04be2ace4ac47d532e9b, type: 2}
-  _title: 
+  _title: "\uD504\uB85C\uD3EC\uC988\uB97C \uD558\uAE30 \uD558\uB8E8 \uC804, \uADF8\uB0A0..."
   _titlePanelPrefab: {fileID: 4372533354834723338}
   _quotesPanelPrefab: {fileID: 5433269878124393909}
   FemaleWakeUpTimer: {fileID: 7670150610844878624}
