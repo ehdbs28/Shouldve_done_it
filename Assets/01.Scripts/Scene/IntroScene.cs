@@ -4,11 +4,11 @@ public class IntroScene : BaseScene
 {
     [SerializeField] GameObject demoUI = null;
 
-    protected override void OnSceneInitialize()
+    public override void OnPreLoadScene(Scenes next, Scenes prev)
     {
-        base.OnSceneInitialize();
-
-        if(DataManager.UserData.ProgressData.ClearedSituationList.Count > 0)
+        base.OnPreLoadScene(next, prev);
+     
+        if (DataManager.UserData.ProgressData.ClearedSituationList.Count > 0)
         {
             demoUI.SetActive(true);
             return;

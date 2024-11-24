@@ -79,7 +79,7 @@ public class SoundManager : MonoSingleton<SoundManager>
 
     public void PlayTalkSFX()
     {
-        string talkKey = "talk";
+        string talkKey = "Talk";
         AudioClip clip = _audioClipSO.GetAudioClip(talkKey);
         Play(clip,SoundEnum.EFFECT,true,true);
     }
