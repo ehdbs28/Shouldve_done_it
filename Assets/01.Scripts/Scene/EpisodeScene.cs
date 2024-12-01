@@ -21,7 +21,7 @@ public class EpisodeScene : BaseScene
         {
             _titlePanel = Instantiate(_titlePanelPrefab, GameManager.Instance.uiCanvas.transform);
         }
-        _titlePanel.Show(_title, next != prev, OnEpisodeStart);
+        _titlePanel.Show(new GetLocalizeString(_title), next != prev, OnEpisodeStart);
     }
 
     protected virtual void OnEpisodeStart()

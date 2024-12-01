@@ -30,7 +30,7 @@ public class EpisodeSlotUI : MonoBehaviourUI
     private void RefreshUI()
     {
         thumbnailImage.sprite = currentEpisodeData.episodeThumbnail;
-        title.text = currentEpisodeData.episodeName;
+        title.text = new GetLocalizeString(currentEpisodeData.episodeName);
     }
 
     public void OnTouchStartEpisode()

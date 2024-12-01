@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 783475963952785660}
   - component: {fileID: 1865922058245310935}
   - component: {fileID: 4957666510160058858}
+  - component: {fileID: 7646773820027440393}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -176,6 +177,19 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.9
   m_Text: "\uB77C\uACE0 \uD560 \uB54C \uD560\uAC78"
+--- !u!114 &7646773820027440393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485454064792009633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b9b3402e549489886710e675b07f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: title
 --- !u!1 &539026820376077657
 GameObject:
   m_ObjectHideFlags: 0
@@ -25348,6 +25362,7 @@ GameObject:
   - component: {fileID: 6635858400484191832}
   - component: {fileID: 8209775390118982915}
   - component: {fileID: 3731345036596451973}
+  - component: {fileID: 5457277066177101152}
   m_Layer: 5
   m_Name: TabToStart
   m_TagString: Untagged
@@ -25416,6 +25431,19 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 0.9
   m_Text: "\uD130\uCE58\uD558\uC5EC \uC2DC\uC791\uD558\uAE30"
+--- !u!114 &5457277066177101152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322288916210776917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b9b3402e549489886710e675b07f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: tab_to_start
 --- !u!1 &4482643515389920478
 GameObject:
   m_ObjectHideFlags: 0
