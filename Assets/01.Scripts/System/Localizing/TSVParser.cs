@@ -65,6 +65,7 @@ public class TSVParser : MonoBehaviour
                 .Split('\t')
                 .Where((i, index) => headers[index].StartsWith("//") == false)
                 .Select(i => i.Trim())
+                .Select(i => i.Replace("\\n", "\n"))
                 .ToArray();
 
             var data = new Dictionary<string, string>();

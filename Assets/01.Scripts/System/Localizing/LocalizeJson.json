@@ -13,13 +13,13 @@
   },
   {
     "LocalizeKey": "demo_text",
-    "Korean": "[<color>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\\n플레이해주셔서 감사합니다. :)",
+    "Korean": "[<color=green>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\n플레이해주셔서 감사합니다. :)",
     "English": "-",
     "Japanese": "-"
   },
   {
     "LocalizeKey": "reset_data_and_keep_going",
-    "Korean": "데이터를 초기화하고\\n계속하기",
+    "Korean": "데이터를 초기화하고\n계속하기",
     "English": "-",
     "Japanese": "-"
   },
@@ -31,7 +31,7 @@
   },
   {
     "LocalizeKey": "episode_cafe_opening",
-    "Korean": "그녀와 만난지 얼마 되지 않던 날 카페에서…",
+    "Korean": "그녀와 만난지 얼마 되지 않던 날\n카페에서…",
     "English": "-",
     "Japanese": "-"
   },
@@ -193,7 +193,7 @@
   },
   {
     "LocalizeKey": "episode_cafe_complete_phrase_content",
-    "Korean": "여자의 마음을 이해하시다니,\\n참으로 깊은 배려와 섬세함이 느껴집니다.",
+    "Korean": "여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.",
     "English": "-",
     "Japanese": "-"
   },
@@ -337,7 +337,7 @@
   },
   {
     "LocalizeKey": "episode_room_phone_talk_message_1",
-    "Korean": "오빠 오늘 좋았어 ㅎㅎ\\n들어가서 푹 쉬어~",
+    "Korean": "오빠 오늘 좋았어 ㅎㅎ\n들어가서 푹 쉬어~",
     "English": "-",
     "Japanese": "-"
   },
@@ -379,7 +379,7 @@
   },
   {
     "LocalizeKey": "episode_room_fail_phrase_content_sleep",
-    "Korean": "잘못은 숨기려 할수록 더 크게 드러난다.\\n인정하고 배우는 용기가 진짜 변화의 시작이다.",
+    "Korean": "잘못은 숨기려 할수록 더 크게 드러난다.\n인정하고 배우는 용기가 진짜 변화의 시작이다.",
     "English": "-",
     "Japanese": "-"
   },

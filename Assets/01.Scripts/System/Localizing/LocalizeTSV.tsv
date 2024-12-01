@@ -1,10 +1,10 @@
 LocalizeKey	//note	Korean	English	Japanese
 title	게임 제목	라고 할 때 할걸	-	-
 tab_to_start	-	터치하여 시작하기	-	-
-demo_text	데모 패널 텍스트	[<color>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\n플레이해주셔서 감사합니다. :)	-	-
+demo_text	데모 패널 텍스트	[<color=green>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\n플레이해주셔서 감사합니다. :)	-	-
 reset_data_and_keep_going	-	데이터를 초기화하고\n계속하기	-	-
 episode_cafe_name	카페 에피소드 이름	나 뭐 달라진 거 없어?	-	-
-episode_cafe_opening	카페 에피소드 오프닝 텍스트	그녀와 만난지 얼마 되지 않던 날 카페에서…	-	-
+episode_cafe_opening	카페 에피소드 오프닝 텍스트	그녀와 만난지 얼마 되지 않던 날\n카페에서…	-	-
 episode_cafe_dialog_1_question	카페 에피소드 대화1 질문	나 어디 달라진 거 없어?	-	-
 episode_cafe_dialog_1_answer	카페 에피소드 대화1 정답시 텍스트	잘 보고 있었구나~!!	-	-
 episode_cafe_dialog_1_wrong	카페 에피소드 대화1 오답시 텍스트	그럴 줄 알았어...	-	-
