@@ -2,8 +2,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
-using UnityEditor;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class TSVParser : MonoBehaviour
 {
@@ -39,7 +41,10 @@ public class TSVParser : MonoBehaviour
 
         string jsonPath = Path.Combine(jsonRootFolderPath, jsonFileName);
         File.WriteAllText(jsonPath, json);
+
+        #if UNITY_EDITOR
         AssetDatabase.Refresh();
+        #endif
     }
 
     private string TSV2JSON(string path)
