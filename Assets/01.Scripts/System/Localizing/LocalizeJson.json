@@ -1,0 +1,428 @@
+[
+  {
+    "LocalizeKey": "title",
+    "Korean": "라고 할 때 할걸",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "tab_to_start",
+    "Korean": "터치하여 시작하기",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "demo_text",
+    "Korean": "[<color>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\\n플레이해주셔서 감사합니다. :)",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "reset_data_and_keep_going",
+    "Korean": "데이터를 초기화하고\\n계속하기",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_name",
+    "Korean": "나 뭐 달라진 거 없어?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_opening",
+    "Korean": "그녀와 만난지 얼마 되지 않던 날 카페에서…",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_question",
+    "Korean": "나 어디 달라진 거 없어?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_answer",
+    "Korean": "잘 보고 있었구나~!!",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_wrong",
+    "Korean": "그럴 줄 알았어...",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_phrase_content",
+    "Korean": "눈썰미를 기르는 것, 그것은 삶의 작은 디테일 속에서 진실을 발견하는 능력을 키우는 일이다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_phrase_auth",
+    "Korean": "Emilio Capriccio",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_tooltip_space",
+    "Korean": "- SPACE 키를 눌러 어제의 모습을 기억해내기 -",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_1_tooltip_enter",
+    "Korean": "- ENTER 키를 눌러 정답 제출하기 -",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_question",
+    "Korean": "오늘 무슨 날인지 알고 있지?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_choice_1",
+    "Korean": "너 생일이잖아",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_choice_2",
+    "Korean": "내 생일인가?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_choice_3",
+    "Korean": "기념일이지",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_choice_4",
+    "Korean": "아무 날 아니잖아",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_answer",
+    "Korean": "맞아 ㅎㅎ 그냥 말해봤어~~",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_wrong",
+    "Korean": "그냥 말해본 건데… 관심이 있기는 해?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_phrase_content",
+    "Korean": "여자의 마음은 바다처럼 깊고 이해하기 어렵다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_2_phrase_auth",
+    "Korean": "Gabriel García Márquez",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_question",
+    "Korean": "나보다 예쁜 여자가 사귀자 하면 어떡할 거야?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_choice_1",
+    "Korean": "예쁜 여자랑 사귀지 ㅋㅋ",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_choice_2",
+    "Korean": "당연히 너랑 사귀지",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_choice_3",
+    "Korean": "너가 제일 예뻐",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_answer",
+    "Korean": "음… 정답은 아니지만 뭐 ㅋㅋ",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_wrong_1",
+    "Korean": "나는 어쩌고?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_wrong_2",
+    "Korean": "그건 너무 거짓말이다 ㅋㅋㅋ",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_wrong_3",
+    "Korean": "세상에 예쁜 사람이 얼마나 많은데",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_phrase_content",
+    "Korean": "정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_dialog_3_phrase_auth",
+    "Korean": "Elizabeth Novak",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_complete_phrase_content",
+    "Korean": "여자의 마음을 이해하시다니,\\n참으로 깊은 배려와 섬세함이 느껴집니다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_cafe_complete_phrase_auth",
+    "Korean": "Chat GPT",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_name",
+    "Korean": "오빠는 내가 왜 화난지 몰라?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_opening",
+    "Korean": "그녀와의 만남도 익숙해졌을 무렵 공원에서...",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_tooltip_space",
+    "Korean": "- 위급한 상황에서 SPACE 를 누르세요! -",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_content_taipan",
+    "Korean": "위험한 일은 언제나 찾아올 수 있다. 중요한 건 그 순간을 마주하는 우리의 용기다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_auth_taipan",
+    "Korean": "Daniel Croft",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_content_girl",
+    "Korean": "지나가는 바람처럼 스쳐가는 인연, 너무 가까이 다가서면 휘말릴 수도 있다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_auth_girl",
+    "Korean": "Alexander Graves",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_content_banana",
+    "Korean": "발밑도 조심하라. 작은 실수 하나가 큰 길을 바꿀 수 있다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_fail_phrase_auth_banana",
+    "Korean": "Charles Harper",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_complete_phrase_content",
+    "Korean": "고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_walk_complete_phrase_auth",
+    "Korean": "Chat GPT",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_name",
+    "Korean": "언년이냐?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_opening",
+    "Korean": "프로포즈를 하기 하루 전, 그날...",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_tooltip_touch",
+    "Korean": "- 주변 사물들을 터치해 {0} -",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_tooltip_touch_lamp",
+    "Korean": "여자친구가 깨지 않도록 하세요!",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_tooltip_touch_bookshelf",
+    "Korean": "당신이 정신을 차릴 수 있도록 해주세요!",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_tooltip_touch_phone",
+    "Korean": "문제를 알아차리도록 하세요!",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_tooltip_slide",
+    "Korean": "- 알림들을 밀어넘겨 여자친구가 보기 전에 불미스러운 문자를 지우세요! -",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_date",
+    "Korean": "11월 23일 토요일",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_weather",
+    "Korean": "대체로 청명함",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_temperature",
+    "Korean": "최고:12 최저:-2",
+    "English": "H:12 L:-2",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_name_1",
+    "Korean": "정다혜",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_message_1",
+    "Korean": "오빠 오늘 좋았어 ㅎㅎ\\n들어가서 푹 쉬어~",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_name_2",
+    "Korean": "이수연",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_message_2",
+    "Korean": "우리 언제 또 봐요?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_name_3",
+    "Korean": "클라라 베일린",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_message_3",
+    "Korean": "나 인청공항 도착해요 2시에",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_name_4",
+    "Korean": "서윤채",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_phone_talk_message_4",
+    "Korean": "다음에는 혼자와 ㅋㅋ",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_phrase_content_sleep",
+    "Korean": "잘못은 숨기려 할수록 더 크게 드러난다.\\n인정하고 배우는 용기가 진짜 변화의 시작이다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_phrase_auth_sleep",
+    "Korean": "Serena Vale",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_girl_content_sleep",
+    "Korean": "이 새끼가...?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_phrase_content_awake",
+    "Korean": "들킨 잘못은 변명이 아니라 대가를 요구한다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_phrase_auth_awake",
+    "Korean": "Rowan Blake",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_fail_girl_content_awake",
+    "Korean": "너 뭐하냐...?",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_success_phrase_content",
+    "Korean": "모르는 것이 때로는 약이 될 수도 있다.",
+    "English": "-",
+    "Japanese": "-"
+  },
+  {
+    "LocalizeKey": "episode_room_success_phrase_auth",
+    "Korean": "Adrian Frost",
+    "English": "-",
+    "Japanese": "-"
+  }
+]

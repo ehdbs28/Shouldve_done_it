@@ -1,0 +1,72 @@
+LocalizeKey	//note	Korean	English	Japanese
+title	게임 제목	라고 할 때 할걸	-	-
+tab_to_start	-	터치하여 시작하기	-	-
+demo_text	데모 패널 텍스트	[<color>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\n플레이해주셔서 감사합니다. :)	-	-
+reset_data_and_keep_going	-	데이터를 초기화하고\n계속하기	-	-
+episode_cafe_name	카페 에피소드 이름	나 뭐 달라진 거 없어?	-	-
+episode_cafe_opening	카페 에피소드 오프닝 텍스트	그녀와 만난지 얼마 되지 않던 날 카페에서…	-	-
+episode_cafe_dialog_1_question	카페 에피소드 대화1 질문	나 어디 달라진 거 없어?	-	-
+episode_cafe_dialog_1_answer	카페 에피소드 대화1 정답시 텍스트	잘 보고 있었구나~!!	-	-
+episode_cafe_dialog_1_wrong	카페 에피소드 대화1 오답시 텍스트	그럴 줄 알았어...	-	-
+episode_cafe_dialog_1_phrase_content	카페 에피소드 대화1 오답시 명언 텍스트	눈썰미를 기르는 것, 그것은 삶의 작은 디테일 속에서 진실을 발견하는 능력을 키우는 일이다.	-	-
+episode_cafe_dialog_1_phrase_auth	카페 에피소드 대화1 오답시 명언 저자	Emilio Capriccio	-	-
+episode_cafe_dialog_1_tooltip_space	카페 에피소드 대화1 기억 확인하기 도움말	- SPACE 키를 눌러 어제의 모습을 기억해내기 -	-	-
+episode_cafe_dialog_1_tooltip_enter	카페 에피소드 대화1 정답 제출하기 도움말	- ENTER 키를 눌러 정답 제출하기 -	-	-
+episode_cafe_dialog_2_question	카페 에피소드 대화2 질문	오늘 무슨 날인지 알고 있지?	-	-
+episode_cafe_dialog_2_choice_1	카페 에피소드 대화2 선택지 1	너 생일이잖아	-	-
+episode_cafe_dialog_2_choice_2	카페 에피소드 대화2 선택지 2	내 생일인가?	-	-
+episode_cafe_dialog_2_choice_3	카페 에피소드 대화2 선택지 3	기념일이지	-	-
+episode_cafe_dialog_2_choice_4	카페 에피소드 대화2 선택지 4	아무 날 아니잖아	-	-
+episode_cafe_dialog_2_answer	카페 에피소드 대화2 정답시 텍스트	맞아 ㅎㅎ 그냥 말해봤어~~	-	-
+episode_cafe_dialog_2_wrong	카페 에피소드 대화2 오답시 텍스트	그냥 말해본 건데… 관심이 있기는 해?	-	-
+episode_cafe_dialog_2_phrase_content	카페 에피소드 대화2 오답시 명언 텍스트	여자의 마음은 바다처럼 깊고 이해하기 어렵다.	-	-
+episode_cafe_dialog_2_phrase_auth	카페 에피소드 대화2 오답시 명언 저자	Gabriel García Márquez	-	-
+episode_cafe_dialog_3_question	카페 에피소드 대화3 질문	나보다 예쁜 여자가 사귀자 하면 어떡할 거야?	-	-
+episode_cafe_dialog_3_choice_1	카페 에피소드 대화3 선택지 1	예쁜 여자랑 사귀지 ㅋㅋ	-	-
+episode_cafe_dialog_3_choice_2	카페 에피소드 대화3 선택지 2	당연히 너랑 사귀지	-	-
+episode_cafe_dialog_3_choice_3	카페 에피소드 대화3 선택지 3	너가 제일 예뻐	-	-
+episode_cafe_dialog_3_answer	카페 에피소드 대화3 정답시 텍스트	음… 정답은 아니지만 뭐 ㅋㅋ	-	-
+episode_cafe_dialog_3_wrong_1	카페 에피소드 대화3 오답시 텍스트 1	나는 어쩌고?	-	-
+episode_cafe_dialog_3_wrong_2	카페 에피소드 대화3 오답시 텍스트 2	그건 너무 거짓말이다 ㅋㅋㅋ	-	-
+episode_cafe_dialog_3_wrong_3	카페 에피소드 대화3 오답시 텍스트 3	세상에 예쁜 사람이 얼마나 많은데	-	-
+episode_cafe_dialog_3_phrase_content	카페 에피소드 대화3 오답시 명언 텍스트	정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.	-	-
+episode_cafe_dialog_3_phrase_auth	카페 에피소드 대화3 오답시 명언 저자	Elizabeth Novak	-	-
+episode_cafe_complete_phrase_content	카페 에피소드 클리어 명언 텍스트	여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.	-	-
+episode_cafe_complete_phrase_auth	카페 에피소드 클리어 명언 저자	Chat GPT	-	-
+episode_walk_name	산책 에피소드 이름	오빠는 내가 왜 화난지 몰라?	-	-
+episode_walk_opening	산책 에피소드 오프닝 텍스트	그녀와의 만남도 익숙해졌을 무렵 공원에서...	-	-
+episode_walk_tooltip_space	산책 에피소드 상황 대처 도움말	- 위급한 상황에서 SPACE 를 누르세요! -	-	-
+episode_walk_fail_phrase_content_taipan	산책 에피소드 뱀 실패 명언 텍스트	위험한 일은 언제나 찾아올 수 있다. 중요한 건 그 순간을 마주하는 우리의 용기다.	-	-
+episode_walk_fail_phrase_auth_taipan	산책 에피소드 뱀 실패 명언 저자	Daniel Croft	-	-
+episode_walk_fail_phrase_content_girl	산책 에피소드 여자 실패 명언 텍스트	지나가는 바람처럼 스쳐가는 인연, 너무 가까이 다가서면 휘말릴 수도 있다.	-	-
+episode_walk_fail_phrase_auth_girl	산책 에피소드 여자 실패 명언 저자	Alexander Graves	-	-
+episode_walk_fail_phrase_content_banana	산책 에피소드 바나나 실패 명언 텍스트	발밑도 조심하라. 작은 실수 하나가 큰 길을 바꿀 수 있다.	-	-
+episode_walk_fail_phrase_auth_banana	산책 에피소드 바나나 실패 명언 저자	Charles Harper	-	-
+episode_walk_complete_phrase_content	산책 에피소드 클리어 명언 텍스트	고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.	-	-
+episode_walk_complete_phrase_auth	산책 에피소드 클리어 명언 저자	Chat GPT	-	-
+episode_room_name	룸 에피소드 이름	언년이냐?	-	-
+episode_room_opening	룸 에피소드 오프닝 텍스트	프로포즈를 하기 하루 전, 그날...	-	-
+episode_room_tooltip_touch	룸 에피소드 행동 도움말 바디	- 주변 사물들을 터치해 {0} -	-	-
+episode_room_tooltip_touch_lamp	룸 에피소드 램프 도움말	여자친구가 깨지 않도록 하세요!	-	-
+episode_room_tooltip_touch_bookshelf	룸 에피소드 책선반 도움말	당신이 정신을 차릴 수 있도록 해주세요!	-	-
+episode_room_tooltip_touch_phone	룸 에피소드 휴대폰 도움말	문제를 알아차리도록 하세요!	-	-
+episode_room_tooltip_slide	룸 에피소드 휴대폰 도움말	- 알림들을 밀어넘겨 여자친구가 보기 전에 불미스러운 문자를 지우세요! -	-	-
+episode_room_phone_date	룸 에피소드 휴대폰 날짜	11월 23일 토요일	-	-
+episode_room_phone_weather	룸 에피소드 휴대폰 날씨	대체로 청명함	-	-
+episode_room_phone_temperature	룸 에피소드 휴대폰 온도	최고:12 최저:-2	H:12 L:-2	-
+episode_room_phone_talk_name_1	룸 에피소드 톡 이름 1	정다혜	-	-
+episode_room_phone_talk_message_1	룸 에피소드 톡 내용 1	오빠 오늘 좋았어 ㅎㅎ\n들어가서 푹 쉬어~	-	-
+episode_room_phone_talk_name_2	룸 에피소드 톡 이름 2	이수연	-	-
+episode_room_phone_talk_message_2	룸 에피소드 톡 내용 2	우리 언제 또 봐요?	-	-
+episode_room_phone_talk_name_3	룸 에피소드 톡 이름 3	클라라 베일린	-	-
+episode_room_phone_talk_message_3	룸 에피소드 톡 내용 3	나 인청공항 도착해요 2시에	-	-
+episode_room_phone_talk_name_4	룸 에피소드 톡 이름 4	서윤채	-	-
+episode_room_phone_talk_message_4	룸 에피소드 톡 내용 4	다음에는 혼자와 ㅋㅋ	-	-
+episode_room_fail_phrase_content_sleep	룸 에피소드 자고있을 때 실패 명언 텍스트	잘못은 숨기려 할수록 더 크게 드러난다.\n인정하고 배우는 용기가 진짜 변화의 시작이다.	-	-
+episode_room_fail_phrase_auth_sleep	룸 에피소드 자고있을 때 실패 명언 저자	Serena Vale	-	-
+episode_room_fail_girl_content_sleep	룸 에피소드 자고있을 때 실패 여자 대사	이 새끼가...?	-	-
+episode_room_fail_phrase_content_awake	룸 에피소드 깼을 때 실패 명언 텍스트	들킨 잘못은 변명이 아니라 대가를 요구한다.	-	-
+episode_room_fail_phrase_auth_awake	룸 에피소드 깼을 때 실패 명언 저자	Rowan Blake	-	-
+episode_room_fail_girl_content_awake	룸 에피소드 깼을 때 실패 여자 대사	너 뭐하냐...?	-	-
+episode_room_success_phrase_content	룸 에피소드 성공 명언 텍스트	모르는 것이 때로는 약이 될 수도 있다.	-	-
+episode_room_success_phrase_auth	룸 에피소드 성공 명언 저자	Adrian Frost	-	-
