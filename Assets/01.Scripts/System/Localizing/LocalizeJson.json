@@ -2,427 +2,427 @@
   {
     "LocalizeKey": "title",
     "Korean": "라고 할 때 할걸",
-    "English": "-",
-    "Japanese": "-"
+    "English": "If only I did...",
+    "Japanese": "ああ、やっておけばよかった"
   },
   {
     "LocalizeKey": "tab_to_start",
     "Korean": "터치하여 시작하기",
-    "English": "-",
-    "Japanese": "-"
+    "English": "tab to start",
+    "Japanese": "tab to start"
   },
   {
     "LocalizeKey": "demo_text",
     "Korean": "[<color=green>라고 할 때 할걸</color>]의 데모버전은 여기까지 입니다.\n플레이해주셔서 감사합니다. :)",
-    "English": "-",
-    "Japanese": "-"
+    "English": "The demo version of [<color=green>If only I did...</color>] ends here.\nThank you for playing. :)",
+    "Japanese": "「<color=green>ああ、やればよかった</color>」のデモ版はここで終了です。\n遊んでいただきありがとうございます。 :)"
   },
   {
     "LocalizeKey": "reset_data_and_keep_going",
     "Korean": "데이터를 초기화하고\n계속하기",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Reset data and\ncontinue",
+    "Japanese": "データをリセットして\n続行します"
   },
   {
     "LocalizeKey": "episode_cafe_name",
     "Korean": "나 뭐 달라진 거 없어?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Am I any different?",
+    "Japanese": "私、何か変わった?"
   },
   {
     "LocalizeKey": "episode_cafe_opening",
     "Korean": "그녀와 만난지 얼마 되지 않던 날\n카페에서…",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Not long after we met, \nwhen we were at the cafe...",
+    "Japanese": "出会ってからあまり時間が経っていない頃、\nカフェにいた時..."
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_question",
     "Korean": "나 어디 달라진 거 없어?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Am I any different?",
+    "Japanese": "私、何か変わった?"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_answer",
     "Korean": "잘 보고 있었구나~!!",
-    "English": "-",
-    "Japanese": "-"
+    "English": "You were paying attention, huh~??",
+    "Japanese": "ちゃんと見てたんだね!"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_wrong",
     "Korean": "그럴 줄 알았어...",
-    "English": "-",
-    "Japanese": "-"
+    "English": "I knew this was going to happen...",
+    "Japanese": "やっぱりね..."
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_phrase_content",
     "Korean": "눈썰미를 기르는 것, 그것은 삶의 작은 디테일 속에서 진실을 발견하는 능력을 키우는 일이다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Developing keen observation is the process of cultivating the ability to find truth in the small details of life.",
+    "Japanese": "「鋭い観察力を養うことは、人生の小さなディテールの中に真実を見つける能力を育てることだ。」"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_phrase_auth",
     "Korean": "Emilio Capriccio",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Emilio Capriccio",
+    "Japanese": "Emilio Capriccio"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_tooltip_space",
     "Korean": "- SPACE 키를 눌러 어제의 모습을 기억해내기 -",
-    "English": "-",
-    "Japanese": "-"
+    "English": "- Press the SPACE key to recall yesterday's image -",
+    "Japanese": "- SPACEキーを押して昨日の姿を思い出す -"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_1_tooltip_enter",
     "Korean": "- ENTER 키를 눌러 정답 제출하기 -",
-    "English": "-",
-    "Japanese": "-"
+    "English": "- Press the ENTER key to submit your answer -",
+    "Japanese": "- ENTERキーを押して答えを提出する -"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_question",
     "Korean": "오늘 무슨 날인지 알고 있지?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Do you know what day it is today?",
+    "Japanese": "今日は何の日か知ってる?"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_choice_1",
     "Korean": "너 생일이잖아",
-    "English": "-",
-    "Japanese": "-"
+    "English": "It's your birthday",
+    "Japanese": "あなたの誕生日だよ"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_choice_2",
     "Korean": "내 생일인가?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Is it my birthday?",
+    "Japanese": "私の誕生日なの"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_choice_3",
     "Korean": "기념일이지",
-    "English": "-",
-    "Japanese": "-"
+    "English": "It's an anniversary~",
+    "Japanese": "記念日だよ"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_choice_4",
     "Korean": "아무 날 아니잖아",
-    "English": "-",
-    "Japanese": "-"
+    "English": "It's just any other day, right?",
+    "Japanese": "ただの日じゃないよね。"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_answer",
     "Korean": "맞아 ㅎㅎ 그냥 말해봤어~~",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Yeah, haha, I was just saying~~",
+    "Japanese": "うん、ただ言ってみただけだよ~~"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_wrong",
     "Korean": "그냥 말해본 건데… 관심이 있기는 해?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "I was just saying it... but do you even have any interest in me?",
+    "Japanese": "ただ言ってみただけなんだけど…私に興味あるの?"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_phrase_content",
     "Korean": "여자의 마음은 바다처럼 깊고 이해하기 어렵다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "A woman's mind is as deep as the ocean and difficult to understand.",
+    "Japanese": "「女性の心は海のように深く、理解するのが難しい。」"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_2_phrase_auth",
     "Korean": "Gabriel García Márquez",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Gabriel García Márquez",
+    "Japanese": "Gabriel García Márquez"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_question",
     "Korean": "나보다 예쁜 여자가 사귀자 하면 어떡할 거야?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "What would you do if a girl more beautiful than me asked you out?",
+    "Japanese": "私より美しい女の子が付き合おうって言ったら、どうする?"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_choice_1",
     "Korean": "예쁜 여자랑 사귀지 ㅋㅋ",
-    "English": "-",
-    "Japanese": "-"
+    "English": "I'd date a pretty girl, haha.",
+    "Japanese": "可愛い女の子と付き合うよ、笑"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_choice_2",
     "Korean": "당연히 너랑 사귀지",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Of course, I'd date you.",
+    "Japanese": "もちろん、君と付き合うよ"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_choice_3",
     "Korean": "너가 제일 예뻐",
-    "English": "-",
-    "Japanese": "-"
+    "English": "You're the prettiest girl I've ever known",
+    "Japanese": "君は僕が今まで知っている中で一番美しい女の子だよ"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_answer",
     "Korean": "음… 정답은 아니지만 뭐 ㅋㅋ",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Hmm... not the right answer, but oh well, haha.",
+    "Japanese": "うーん...正解じゃないけど、まあいいか、笑"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_wrong_1",
     "Korean": "나는 어쩌고?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "What about me?",
+    "Japanese": "じゃあ、私は?"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_wrong_2",
     "Korean": "그건 너무 거짓말이다 ㅋㅋㅋ",
-    "English": "-",
-    "Japanese": "-"
+    "English": "That's such a lie, haha.",
+    "Japanese": "それは完全に嘘だね、笑"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_wrong_3",
     "Korean": "세상에 예쁜 사람이 얼마나 많은데",
-    "English": "-",
-    "Japanese": "-"
+    "English": "There are so many pretty girl in the world.",
+    "Japanese": "世界には美しい人がたくさんいるよね"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_phrase_content",
     "Korean": "정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "There are things without clear answers. Sometimes,\nthe answer is found as we live and experience life.",
+    "Japanese": "「答えがないこともある。時には、ただ生きながら探していくことが答えの時もある。」"
   },
   {
     "LocalizeKey": "episode_cafe_dialog_3_phrase_auth",
     "Korean": "Elizabeth Novak",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Elizabeth Novak",
+    "Japanese": "Elizabeth Novak"
   },
   {
     "LocalizeKey": "episode_cafe_complete_phrase_content",
     "Korean": "여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "To understand a woman's heart,\none can truly feel the depth of consideration and delicacy.",
+    "Japanese": "「女性の心を理解するなんて、深い配慮と繊細さが感じられますね。」"
   },
   {
     "LocalizeKey": "episode_cafe_complete_phrase_auth",
     "Korean": "Chat GPT",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Chat GPT",
+    "Japanese": "Chat GPT"
   },
   {
     "LocalizeKey": "episode_walk_name",
     "Korean": "오빠는 내가 왜 화난지 몰라?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Do you really not know why I'm upset?",
+    "Japanese": "お兄ちゃん、私がなんで怒ってるかわからないの?"
   },
   {
     "LocalizeKey": "episode_walk_opening",
     "Korean": "그녀와의 만남도 익숙해졌을 무렵 공원에서...",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Around the time I had grown accustomed to meeting her,\nwhen we were at the park...",
+    "Japanese": "彼女との出会いにも慣れてきた頃、公園で..."
   },
   {
     "LocalizeKey": "episode_walk_tooltip_space",
     "Korean": "- 위급한 상황에서 SPACE 를 누르세요! -",
-    "English": "-",
-    "Japanese": "-"
+    "English": "- In an emergency, press SPACE! -",
+    "Japanese": "- 緊急時には、SPACEキーを押してください! -"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_content_taipan",
     "Korean": "위험한 일은 언제나 찾아올 수 있다. 중요한 건 그 순간을 마주하는 우리의 용기다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Danger can come at any moment. What truly matters is the courage we show when facing it.",
+    "Japanese": "「危険はいつでも訪れる可能性がある。大切なのは、その瞬間に立ち向かう私たちの勇気だ。」"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_auth_taipan",
     "Korean": "Daniel Croft",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Daniel Croft",
+    "Japanese": "Daniel Croft"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_content_girl",
     "Korean": "지나가는 바람처럼 스쳐가는 인연, 너무 가까이 다가서면 휘말릴 수도 있다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Some connections pass by like the wind; if you get too close, you might be swept away.",
+    "Japanese": "「通り過ぎる風のような縁、あまり近づきすぎると巻き込まれることもある。」"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_auth_girl",
     "Korean": "Alexander Graves",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Alexander Graves",
+    "Japanese": "Alexander Graves"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_content_banana",
     "Korean": "발밑도 조심하라. 작은 실수 하나가 큰 길을 바꿀 수 있다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Watch your step. Even a small mistake can change the entire path ahead.",
+    "Japanese": "「足元にも注意しなさい。小さなミスが大きな道を変えることもある。」"
   },
   {
     "LocalizeKey": "episode_walk_fail_phrase_auth_banana",
     "Korean": "Charles Harper",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Charles Harper",
+    "Japanese": "Charles Harper"
   },
   {
     "LocalizeKey": "episode_walk_complete_phrase_content",
     "Korean": "고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "The hardships may not have been easy, but at the end, the gift of growth always awaits.",
+    "Japanese": "「苦労は決して簡単ではなかっただろうけど、その終わりには必ず成長という贈り物が待っている。」"
   },
   {
     "LocalizeKey": "episode_walk_complete_phrase_auth",
     "Korean": "Chat GPT",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Chat GPT",
+    "Japanese": "Chat GPT"
   },
   {
     "LocalizeKey": "episode_room_name",
     "Korean": "언년이냐?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "What kind of person is she?",
+    "Japanese": "彼女はどんな人なの?"
   },
   {
     "LocalizeKey": "episode_room_opening",
     "Korean": "프로포즈를 하기 하루 전, 그날...",
-    "English": "-",
-    "Japanese": "-"
+    "English": "The day before the proposal, that day...",
+    "Japanese": "プロポーズをする前日、その日..."
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch",
     "Korean": "- 주변 사물들을 터치해 {0} -",
-    "English": "-",
-    "Japanese": "-"
+    "English": "- Touch the surrounding objects to {0} -",
+    "Japanese": "- 周囲の物を触って{0}してみてください。 -"
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch_lamp",
     "Korean": "여자친구가 깨지 않도록 하세요!",
-    "English": "-",
-    "Japanese": "-"
+    "English": "keep your girlfriend from waking up!",
+    "Japanese": "彼女が目を覚まさないように"
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch_bookshelf",
     "Korean": "당신이 정신을 차릴 수 있도록 하세요!",
-    "English": "-",
-    "Japanese": "-"
+    "English": "help you snap out of it!",
+    "Japanese": "あなたがしっかり目を覚ますことができるように"
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch_phone",
     "Korean": "당신이 문제를 알아차리도록 하세요!",
-    "English": "-",
-    "Japanese": "-"
+    "English": "make sure you notice the problem!",
+    "Japanese": "あなたが問題に気づくことができるように"
   },
   {
     "LocalizeKey": "episode_room_tooltip_slide",
     "Korean": "- 알림들을 밀어넘겨 여자친구가 보기 전에 불미스러운 문자를 지우세요! -",
-    "English": "-",
-    "Japanese": "-"
+    "English": "- Swipe away the notifications and delete any inappropriate messages before your girlfriend sees them! -",
+    "Japanese": "通知をスワイプして、彼女が見る前に不適切なメッセージを消してください!"
   },
   {
     "LocalizeKey": "episode_room_phone_date",
     "Korean": "11월 23일 토요일",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Saturday, November 23rd",
+    "Japanese": "11月23日土曜日"
   },
   {
     "LocalizeKey": "episode_room_phone_weather",
     "Korean": "대체로 청명함",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Generally clear",
+    "Japanese": "概ね晴れ"
   },
   {
     "LocalizeKey": "episode_room_phone_temperature",
-    "Korean": "최고:12 최저:-2",
-    "English": "H:12 L:-2",
-    "Japanese": "-"
+    "Korean": "최고:12° 최저:-2°",
+    "English": "H: 12°C, L: -2°C",
+    "Japanese": "最高: 12°C, 最低: -2°C"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_name_1",
     "Korean": "정다혜",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Emma Williams",
+    "Japanese": "高橋 さくら"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_message_1",
     "Korean": "오빠 오늘 좋았어 ㅎㅎ\n들어가서 푹 쉬어~",
-    "English": "-",
-    "Japanese": "-"
+    "English": "You were great today, hehe.\nGo inside and get some rest!",
+    "Japanese": "今日は楽しかったね、ふふ。\n中に入ってゆっくり休んでね!"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_name_2",
     "Korean": "이수연",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Olivia Brown",
+    "Japanese": "佐藤 はな"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_message_2",
     "Korean": "우리 언제 또 봐요?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "When will we meet again?",
+    "Japanese": "次はいつ会えるかな?"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_name_3",
     "Korean": "클라라 베일린",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Candy Lee",
+    "Japanese": "クララ・ベイリン"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_message_3",
     "Korean": "나 인청공항 도착해요 2시에",
-    "English": "-",
-    "Japanese": "-"
+    "English": "I’ll be at JFK Airport at 2 PM.",
+    "Japanese": "私は2時にジョン・F・ケネディ空港に着くよ。?"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_name_4",
     "Korean": "서윤채",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Chloe Johnson",
+    "Japanese": "山本 ゆり"
   },
   {
     "LocalizeKey": "episode_room_phone_talk_message_4",
     "Korean": "다음에는 혼자와 ㅋㅋ",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Next time, come alone, haha.",
+    "Japanese": "次は一人で来てね、笑"
   },
   {
     "LocalizeKey": "episode_room_fail_phrase_content_sleep",
     "Korean": "잘못은 숨기려 할수록 더 크게 드러난다.\n인정하고 배우는 용기가 진짜 변화의 시작이다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "The more you try to hide your mistakes, the more they will be exposed.\nThe courage to admit and learn is the true beginning of change.",
+    "Japanese": "「間違いを隠そうとすればするほど、それは大きく明らかになる。\n認めて学ぶ勇気こそが、本当の変化の始まりだ。」"
   },
   {
     "LocalizeKey": "episode_room_fail_phrase_auth_sleep",
     "Korean": "Serena Vale",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Serena Vale",
+    "Japanese": "Serena Vale"
   },
   {
     "LocalizeKey": "episode_room_fail_girl_content_sleep",
     "Korean": "이 새끼가...?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "What the hell...?",
+    "Japanese": "この野郎が...?"
   },
   {
     "LocalizeKey": "episode_room_fail_phrase_content_awake",
     "Korean": "들킨 잘못은 변명이 아니라 대가를 요구한다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "A mistake that’s been exposed demands a price, not an excuse.",
+    "Japanese": "ばれた過ちには言い訳ではなく、代償を求める。"
   },
   {
     "LocalizeKey": "episode_room_fail_phrase_auth_awake",
     "Korean": "Rowan Blake",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Rowan Blake",
+    "Japanese": "Rowan Blake"
   },
   {
     "LocalizeKey": "episode_room_fail_girl_content_awake",
     "Korean": "너 뭐하냐...?",
-    "English": "-",
-    "Japanese": "-"
+    "English": "What are you doing...?",
+    "Japanese": "何してるの...?"
   },
   {
     "LocalizeKey": "episode_room_success_phrase_content",
     "Korean": "모르는 것이 때로는 약이 될 수도 있다.",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Ignorance is bliss.",
+    "Japanese": "知らぬが仏"
   },
   {
     "LocalizeKey": "episode_room_success_phrase_auth",
     "Korean": "Adrian Frost",
-    "English": "-",
-    "Japanese": "-"
+    "English": "Adrian Frost",
+    "Japanese": "Adrian Frost"
   }
 ]
