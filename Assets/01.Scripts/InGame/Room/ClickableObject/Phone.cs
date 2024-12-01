@@ -37,7 +37,7 @@ namespace Episode.Room
             {
                 PhoneUI.Hide();
                 
-                OnDeleteAllTalkEvent?.Invoke(); //»óÈ² Á¾·á
+                OnDeleteAllTalkEvent?.Invoke(); //ï¿½ï¿½È² ï¿½ï¿½ï¿½ï¿½
             }
         }
     }

@@ -74,11 +74,11 @@ namespace Episode.Room
 
         private IEnumerator CheckPhoneCo()
         {
-            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "³Ê ¹¹ÇÏ³Ä...?");
+            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "ï¿½ï¿½ ï¿½ï¿½ï¿½Ï³ï¿½...?");
 
             yield return new WaitForSeconds(2f);
 
-            Room.SetResult("µéÅ² Àß¸øÀº º¯¸íÀÌ ¾Æ´Ñ ´ë°¡¸¦ ¿ä±¸ÇÑ´Ù.", "Rowan Blake", false);
+            Room.SetResult("ï¿½ï¿½Å² ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ë°¡ï¿½ï¿½ ï¿½ä±¸ï¿½Ñ´ï¿½.", "Rowan Blake", false);
         }
 
         public void OnStandUp()
@@ -107,7 +107,7 @@ namespace Episode.Room
             //seq.AppendInterval(2f);
             //seq.AppendCallback(() =>
             //{
-            //    Room.SetResult("??? ???? ???? ????????, ??? ?? ?¨¨??? ?????? ???? ???.", "Rowan Blake", false);
+            //    Room.SetResult("??? ???? ???? ????????, ??? ?? ?ï¿½ï¿½??? ?????? ???? ???.", "Rowan Blake", false);
             //});
 
             //seq.SetAutoKill(true);
