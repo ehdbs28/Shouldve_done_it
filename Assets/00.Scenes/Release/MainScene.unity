@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ade4d81048d439ca859418867e96dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizeTables: []
+  localizeData: {fileID: 4900000, guid: ab505cc36e84549178209be07dcd3a79, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

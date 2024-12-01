@@ -34,6 +34,7 @@ public class GameManager : MonoSingleton<GameManager>
         TextManager.Instance.InitManager();
         SoundManager.Instance.InitManager();  
         CameraManager.Instance.InitManager();
+        LocalizeManager.Instance.InitManager();
     }
 
     public void LoadSceneWithFade<T>(Scenes nextScene, Action<T> onLoadComplete = null, Action<T> onFinish = null) where T : BaseScene
