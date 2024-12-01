@@ -35,7 +35,7 @@ public class LocalizeManager : MonoSingleton<LocalizeManager>
         if(localizeTables.TryGetValue(localizeKey, out LocalizeTable table) == false)
         {
             Debug.LogWarning($"A table with key {localizeKey} doesn't exists");
-            return "";
+            return localizeKey;
         }
 
         return table.GetLocalizeString(currentLanguageType);
