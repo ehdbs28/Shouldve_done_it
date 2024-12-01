@@ -8,10 +8,9 @@ namespace Episode.Room
         [SerializeField] private Timer FemaleWakeUpTimer;
         [SerializeField] private FemaleCharacter FemaleCharacter;
 
-        protected override void OnEpisodeStart()
+        public override void OnPreLoadScene(Scenes next, Scenes prev)
         {
-            base.OnEpisodeStart();
-
+            base.OnPreLoadScene(next, prev);
             ClickableObject.CurrentPriority = 1;
         }
 
