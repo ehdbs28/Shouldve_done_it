@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b9b3402e549489886710e675b07f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizeKey: episode_cafe_dialog_1_tooltip_space
+  localizeKey: episode_cafe_dialog_1_tooltip_enter
 --- !u!114 &1277220418208582816
 MonoBehaviour:
   m_ObjectHideFlags: 0

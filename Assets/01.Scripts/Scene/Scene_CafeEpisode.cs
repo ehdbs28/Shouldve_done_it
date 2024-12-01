@@ -183,7 +183,7 @@ public class Scene_CafeEpisode : EpisodeScene
             yield return new WaitForSeconds(2f);
         
             // SetResult("여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.", "Chat GPT", true);
-            string keyBody = "episode_cafe_dialog_3_phrase";
+            string keyBody = "episode_cafe_complete_phrase";
             SetResult(new LocalizeString($"{keyBody}_content"), new LocalizeString($"{keyBody}_auth"), true);
         }
         else
@@ -204,7 +204,7 @@ public class Scene_CafeEpisode : EpisodeScene
             yield return new WaitForSeconds(2f);
             
             // SetResult("정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.", "Elizabeth Novak", false);
-            string keyBody = "episode_cafe_complete_phrase";
+            string keyBody = "episode_cafe_dialog_3_phrase";
             SetResult(new LocalizeString($"{keyBody}_content"), new LocalizeString($"{keyBody}_auth"), false);
         }
     }
