@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LocalizeManager : MonoSingleton<LocalizeManager>
 {
-    [SerializeField] ELanguageType defaultLanguage = ELanguageType.NONE;
     [SerializeField] TextAsset localizeData = null;
     private Dictionary<string, LocalizeTable> localizeTables = null;
 
@@ -25,12 +24,13 @@ public class LocalizeManager : MonoSingleton<LocalizeManager>
             localizeTables.Add(table.localizeKey, table);
         }
 
-        SetLanguage(defaultLanguage);
+        SetLanguage(DataManager.UserData.SettingData.LanguageType);
     }
 
     public void SetLanguage(ELanguageType languageType)
     {
         currentLanguageType = languageType;
+        DataManager.UserData.SettingData.LanguageType = languageType;
     }
 
     public string GetLocalizeString(string localizeKey)

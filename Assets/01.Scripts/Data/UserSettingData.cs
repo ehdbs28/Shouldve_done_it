@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class UserSettingData
 {
     public Dictionary<string, float> VolumeMap = null;
+    public ELanguageType LanguageType = ELanguageType.NONE;
 
     public UserSettingData()
     {
@@ -12,5 +13,7 @@ public class UserSettingData
             ["SFX"] = 0.5f,
             ["BGM"] = 0.5f
         };
+
+        LanguageType = ELanguageType.NONE;
     }
 }

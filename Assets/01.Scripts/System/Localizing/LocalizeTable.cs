@@ -12,7 +12,7 @@ public class LocalizeTable
             ELanguageType.Korean => korean,
             ELanguageType.English => english,
             ELanguageType.Japanese => japanese,
-            _ => ""
+            _ => english
         };
     }
 }
