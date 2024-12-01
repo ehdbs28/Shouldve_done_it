@@ -29,7 +29,7 @@ namespace Episode.Room
         public override void Show()
         {
             base.Show();
-            tooltipText.text = "";
+            // tooltipText.text = "";
 
             Rect
                 .DOAnchorPos(Vector2.zero, ShowTime)
