@@ -8,64 +8,64 @@ episode_cafe_opening	카페 에피소드 오프닝 텍스트	그녀와 만난지
 episode_cafe_dialog_1_question	카페 에피소드 대화1 질문	나 어디 달라진 거 없어?	Am I any different?	私、何か変わった?
 episode_cafe_dialog_1_answer	카페 에피소드 대화1 정답시 텍스트	잘 보고 있었구나~!!	You were paying attention, huh~??	ちゃんと見てたんだね!
 episode_cafe_dialog_1_wrong	카페 에피소드 대화1 오답시 텍스트	그럴 줄 알았어...	I knew this was going to happen...	やっぱりね...
-episode_cafe_dialog_1_phrase_content	카페 에피소드 대화1 오답시 명언 텍스트	눈썰미를 기르는 것, 그것은 삶의 작은 디테일 속에서 진실을 발견하는 능력을 키우는 일이다.	Developing keen observation is the process of cultivating the ability to find truth in the small details of life.	「鋭い観察力を養うことは、人生の小さなディテールの中に真実を見つける能力を育てることだ。」
+episode_cafe_dialog_1_phrase_content	카페 에피소드 대화1 오답시 명언 텍스트	눈썰미를 기르는 것, 그것은 삶의 작은 디테일 속에서 진실을 발견하는 능력을 키우는 일이다.	Developing keen observation is\nthe process of cultivating the ability to\nfind truth in the small details of life.	「鋭い観察力を養うことは、\n人生の小さなディテールの中に真実を見つける能力を育てることだ。」
 episode_cafe_dialog_1_phrase_auth	카페 에피소드 대화1 오답시 명언 저자	Emilio Capriccio	Emilio Capriccio	Emilio Capriccio
 episode_cafe_dialog_1_tooltip_space	카페 에피소드 대화1 기억 확인하기 도움말	- SPACE 키를 눌러 어제의 모습을 기억해내기 -	- Press the SPACE key to recall yesterday's image -	- SPACEキーを押して昨日の姿を思い出す -
 episode_cafe_dialog_1_tooltip_enter	카페 에피소드 대화1 정답 제출하기 도움말	- ENTER 키를 눌러 정답 제출하기 -	- Press the ENTER key to submit your answer -	- ENTERキーを押して答えを提出する -
 episode_cafe_dialog_2_question	카페 에피소드 대화2 질문	오늘 무슨 날인지 알고 있지?	Do you know what day it is today?	今日は何の日か知ってる?
 episode_cafe_dialog_2_choice_1	카페 에피소드 대화2 선택지 1	너 생일이잖아	It's your birthday	あなたの誕生日だよ
 episode_cafe_dialog_2_choice_2	카페 에피소드 대화2 선택지 2	내 생일인가?	Is it my birthday?	私の誕生日なの
-episode_cafe_dialog_2_choice_3	카페 에피소드 대화2 선택지 3	기념일이지	It's an anniversary~	記念日だよ
+episode_cafe_dialog_2_choice_3	카페 에피소드 대화2 선택지 3	기념일이지	It's an anniversary	記念日だよ
 episode_cafe_dialog_2_choice_4	카페 에피소드 대화2 선택지 4	아무 날 아니잖아	It's just any other day, right?	ただの日じゃないよね。
 episode_cafe_dialog_2_answer	카페 에피소드 대화2 정답시 텍스트	맞아 ㅎㅎ 그냥 말해봤어~~	Yeah, haha, I was just saying~~	うん、ただ言ってみただけだよ~~
-episode_cafe_dialog_2_wrong	카페 에피소드 대화2 오답시 텍스트	그냥 말해본 건데… 관심이 있기는 해?	I was just saying it... but do you even have any interest in me?	ただ言ってみただけなんだけど…私に興味あるの?
-episode_cafe_dialog_2_phrase_content	카페 에피소드 대화2 오답시 명언 텍스트	여자의 마음은 바다처럼 깊고 이해하기 어렵다.	A woman's mind is as deep as the ocean and difficult to understand.	「女性の心は海のように深く、理解するのが難しい。」
+episode_cafe_dialog_2_wrong	카페 에피소드 대화2 오답시 텍스트	그냥 말해본 건데… 관심이 있기는 해?	I was just saying it... but do you even have any interest in me?	ただ言ってみただけなんだけど…\n私に興味あるの?
+episode_cafe_dialog_2_phrase_content	카페 에피소드 대화2 오답시 명언 텍스트	여자의 마음은 바다처럼 깊고 이해하기 어렵다.	A woman's mind is as deep as the ocean\nand difficult to understand.	「女性の心は海のように深く、\n理解するのが難しい。」
 episode_cafe_dialog_2_phrase_auth	카페 에피소드 대화2 오답시 명언 저자	Gabriel García Márquez	Gabriel García Márquez	Gabriel García Márquez
-episode_cafe_dialog_3_question	카페 에피소드 대화3 질문	나보다 예쁜 여자가 사귀자 하면 어떡할 거야?	What would you do if a girl more beautiful than me asked you out?	私より美しい女の子が付き合おうって言ったら、どうする?
+episode_cafe_dialog_3_question	카페 에피소드 대화3 질문	나보다 예쁜 여자가 사귀자 하면 어떡할 거야?	What if a prettier girl asked you out?	私より美しい女の子が付き合おうって言ったら、どうする?
 episode_cafe_dialog_3_choice_1	카페 에피소드 대화3 선택지 1	예쁜 여자랑 사귀지 ㅋㅋ	I'd date a pretty girl, haha.	可愛い女の子と付き合うよ、笑
 episode_cafe_dialog_3_choice_2	카페 에피소드 대화3 선택지 2	당연히 너랑 사귀지	Of course, I'd date you.	もちろん、君と付き合うよ
-episode_cafe_dialog_3_choice_3	카페 에피소드 대화3 선택지 3	너가 제일 예뻐	You're the prettiest girl I've ever known	君は僕が今まで知っている中で一番美しい女の子だよ
+episode_cafe_dialog_3_choice_3	카페 에피소드 대화3 선택지 3	너가 제일 예뻐	You're the prettiest girl.	君は僕が今まで知っている中で一番美しい女の子だよ
 episode_cafe_dialog_3_answer	카페 에피소드 대화3 정답시 텍스트	음… 정답은 아니지만 뭐 ㅋㅋ	Hmm... not the right answer, but oh well, haha.	うーん...正解じゃないけど、まあいいか、笑
 episode_cafe_dialog_3_wrong_1	카페 에피소드 대화3 오답시 텍스트 1	나는 어쩌고?	What about me?	じゃあ、私は?
 episode_cafe_dialog_3_wrong_2	카페 에피소드 대화3 오답시 텍스트 2	그건 너무 거짓말이다 ㅋㅋㅋ	That's such a lie, haha.	それは完全に嘘だね、笑
 episode_cafe_dialog_3_wrong_3	카페 에피소드 대화3 오답시 텍스트 3	세상에 예쁜 사람이 얼마나 많은데	There are so many pretty girl in the world.	世界には美しい人がたくさんいるよね
-episode_cafe_dialog_3_phrase_content	카페 에피소드 대화3 오답시 명언 텍스트	정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.	There are things without clear answers. Sometimes,\nthe answer is found as we live and experience life.	「答えがないこともある。時には、ただ生きながら探していくことが答えの時もある。」
+episode_cafe_dialog_3_phrase_content	카페 에피소드 대화3 오답시 명언 텍스트	정답이 없는 것도 있다. 그저 살아가며 찾아가는 것이 답일 때도 있다.	There are things without clear answers.\nSometimes, the answer is found as we live and experience life.	「答えがないこともある。時には、\nただ生きながら探していくことが\n答えの時もある。」
 episode_cafe_dialog_3_phrase_auth	카페 에피소드 대화3 오답시 명언 저자	Elizabeth Novak	Elizabeth Novak	Elizabeth Novak
-episode_cafe_complete_phrase_content	카페 에피소드 클리어 명언 텍스트	여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.	To understand a woman's heart,\none can truly feel the depth of consideration and delicacy.	「女性の心を理解するなんて、深い配慮と繊細さが感じられますね。」
+episode_cafe_complete_phrase_content	카페 에피소드 클리어 명언 텍스트	여자의 마음을 이해하시다니,\n참으로 깊은 배려와 섬세함이 느껴집니다.	To understand a woman's heart,\none can truly feel the depth of\nconsideration and delicacy.	「女性の心を理解するなんて、\n深い配慮と繊細さが感じられますね。」
 episode_cafe_complete_phrase_auth	카페 에피소드 클리어 명언 저자	Chat GPT	Chat GPT	Chat GPT
 episode_walk_name	산책 에피소드 이름	오빠는 내가 왜 화난지 몰라?	Do you really not know why I'm upset?	お兄ちゃん、私がなんで怒ってるかわからないの?
-episode_walk_opening	산책 에피소드 오프닝 텍스트	그녀와의 만남도 익숙해졌을 무렵 공원에서...	Around the time I had grown accustomed to meeting her,\nwhen we were at the park...	彼女との出会いにも慣れてきた頃、公園で...
+episode_walk_opening	산책 에피소드 오프닝 텍스트	그녀와의 만남도 익숙해졌을 무렵 공원에서...	Around the time\nI had grown accustomed to meeting her,\nwhen we were at the park...	彼女との出会いにも慣れてきた頃、公園で...
 episode_walk_tooltip_space	산책 에피소드 상황 대처 도움말	- 위급한 상황에서 SPACE 를 누르세요! -	- In an emergency, press SPACE! -	- 緊急時には、SPACEキーを押してください! -
-episode_walk_fail_phrase_content_taipan	산책 에피소드 뱀 실패 명언 텍스트	위험한 일은 언제나 찾아올 수 있다. 중요한 건 그 순간을 마주하는 우리의 용기다.	Danger can come at any moment. What truly matters is the courage we show when facing it.	「危険はいつでも訪れる可能性がある。大切なのは、その瞬間に立ち向かう私たちの勇気だ。」
+episode_walk_fail_phrase_content_taipan	산책 에피소드 뱀 실패 명언 텍스트	위험한 일은 언제나 찾아올 수 있다. 중요한 건 그 순간을 마주하는 우리의 용기다.	Danger can come at any moment. What truly matters is the courage we show when facing it.	「危険はいつでも訪れる可能性がある。\n大切なのは、その瞬間に\n立ち向かう私たちの勇気だ。」
 episode_walk_fail_phrase_auth_taipan	산책 에피소드 뱀 실패 명언 저자	Daniel Croft	Daniel Croft	Daniel Croft
-episode_walk_fail_phrase_content_girl	산책 에피소드 여자 실패 명언 텍스트	지나가는 바람처럼 스쳐가는 인연, 너무 가까이 다가서면 휘말릴 수도 있다.	Some connections pass by like the wind; if you get too close, you might be swept away.	「通り過ぎる風のような縁、あまり近づきすぎると巻き込まれることもある。」
+episode_walk_fail_phrase_content_girl	산책 에피소드 여자 실패 명언 텍스트	지나가는 바람처럼 스쳐가는 인연, 너무 가까이 다가서면 휘말릴 수도 있다.	Some connections pass by like the wind; if you get too close, you might be swept away.	「通り過ぎる風のような縁、\nあまり近づきすぎると巻き込まれることもある。」
 episode_walk_fail_phrase_auth_girl	산책 에피소드 여자 실패 명언 저자	Alexander Graves	Alexander Graves	Alexander Graves
-episode_walk_fail_phrase_content_banana	산책 에피소드 바나나 실패 명언 텍스트	발밑도 조심하라. 작은 실수 하나가 큰 길을 바꿀 수 있다.	Watch your step. Even a small mistake can change the entire path ahead.	「足元にも注意しなさい。小さなミスが大きな道を変えることもある。」
+episode_walk_fail_phrase_content_banana	산책 에피소드 바나나 실패 명언 텍스트	발밑도 조심하라. 작은 실수 하나가 큰 길을 바꿀 수 있다.	Watch your step. Even a small mistake can change the entire path ahead.	「足元にも注意しなさい。\n小さなミスが大きな道を変えることもある。」
 episode_walk_fail_phrase_auth_banana	산책 에피소드 바나나 실패 명언 저자	Charles Harper	Charles Harper	Charles Harper
-episode_walk_complete_phrase_content	산책 에피소드 클리어 명언 텍스트	고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.	The hardships may not have been easy, but at the end, the gift of growth always awaits.	「苦労は決して簡単ではなかっただろうけど、その終わりには必ず成長という贈り物が待っている。」
+episode_walk_complete_phrase_content	산책 에피소드 클리어 명언 텍스트	고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.	The hardships may not have been easy, but at the end, the gift of growth always awaits.	「苦労は決して簡単ではなかっただろうけど、\nその終わりには必ず\n成長という贈り物が待っている。」
 episode_walk_complete_phrase_auth	산책 에피소드 클리어 명언 저자	Chat GPT	Chat GPT	Chat GPT
 episode_room_name	룸 에피소드 이름	언년이냐?	What kind of person is she?	彼女はどんな人なの?
-episode_room_opening	룸 에피소드 오프닝 텍스트	프로포즈를 하기 하루 전, 그날...	The day before the proposal, that day...	プロポーズをする前日、その日...
+episode_room_opening	룸 에피소드 오프닝 텍스트	프로포즈를 하기 하루 전, 그날...	When the day before the proposal...	プロポーズをする前日、その日...
 episode_room_tooltip_touch	룸 에피소드 행동 도움말 바디	- 주변 사물들을 터치해 {0} -	- Touch the surrounding objects to {0} -	- 周囲の物を触って{0}してみてください。 -
 episode_room_tooltip_touch_lamp	룸 에피소드 램프 도움말	여자친구가 깨지 않도록 하세요!	keep your girlfriend from waking up!	彼女が目を覚まさないように
 episode_room_tooltip_touch_bookshelf	룸 에피소드 책선반 도움말	당신이 정신을 차릴 수 있도록 하세요!	help you snap out of it!	あなたがしっかり目を覚ますことができるように
 episode_room_tooltip_touch_phone	룸 에피소드 휴대폰 도움말	당신이 문제를 알아차리도록 하세요!	make sure you notice the problem!	あなたが問題に気づくことができるように
-episode_room_tooltip_slide	룸 에피소드 휴대폰 도움말	- 알림들을 밀어넘겨 여자친구가 보기 전에 불미스러운 문자를 지우세요! -	- Swipe away the notifications and delete any inappropriate messages before your girlfriend sees them! -	通知をスワイプして、彼女が見る前に不適切なメッセージを消してください!
+episode_room_tooltip_slide	룸 에피소드 휴대폰 도움말	- 알림들을 밀어넘겨 여자친구가 보기 전에 불미스러운 문자를 지우세요! -	- Swipe away notifications and delete inappropriate messages! -	通知をスワイプして、彼女が見る前に不適切なメッセージを消してください!
 episode_room_phone_date	룸 에피소드 휴대폰 날짜	11월 23일 토요일	Saturday, November 23rd	11月23日土曜日
 episode_room_phone_weather	룸 에피소드 휴대폰 날씨	대체로 청명함	Generally clear	概ね晴れ
 episode_room_phone_temperature	룸 에피소드 휴대폰 온도	최고:12° 최저:-2°	H: 12°C, L: -2°C	最高: 12°C, 最低: -2°C
 episode_room_phone_talk_name_1	룸 에피소드 톡 이름 1	정다혜	Emma Williams	高橋 さくら
-episode_room_phone_talk_message_1	룸 에피소드 톡 내용 1	오빠 오늘 좋았어 ㅎㅎ\n들어가서 푹 쉬어~	You were great today, hehe.\nGo inside and get some rest!	今日は楽しかったね、ふふ。\n中に入ってゆっくり休んでね!
+episode_room_phone_talk_message_1	룸 에피소드 톡 내용 1	오빠 오늘 좋았어 ㅎㅎ\n들어가서 푹 쉬어~	You were great today.\nGet some rest~!	今日は楽しかったね、ふふ。\n中に入ってゆっくり休んでね!
 episode_room_phone_talk_name_2	룸 에피소드 톡 이름 2	이수연	Olivia Brown	佐藤 はな
 episode_room_phone_talk_message_2	룸 에피소드 톡 내용 2	우리 언제 또 봐요?	When will we meet again?	次はいつ会えるかな?
 episode_room_phone_talk_name_3	룸 에피소드 톡 이름 3	클라라 베일린	Candy Lee	クララ・ベイリン
 episode_room_phone_talk_message_3	룸 에피소드 톡 내용 3	나 인청공항 도착해요 2시에	I’ll be at JFK Airport at 2 PM.	私は2時にジョン・F・ケネディ空港に着くよ。?
 episode_room_phone_talk_name_4	룸 에피소드 톡 이름 4	서윤채	Chloe Johnson	山本 ゆり
 episode_room_phone_talk_message_4	룸 에피소드 톡 내용 4	다음에는 혼자와 ㅋㅋ	Next time, come alone, haha.	次は一人で来てね、笑
-episode_room_fail_phrase_content_sleep	룸 에피소드 자고있을 때 실패 명언 텍스트	잘못은 숨기려 할수록 더 크게 드러난다.\n인정하고 배우는 용기가 진짜 변화의 시작이다.	The more you try to hide your mistakes, the more they will be exposed.\nThe courage to admit and learn is the true beginning of change.	「間違いを隠そうとすればするほど、それは大きく明らかになる。\n認めて学ぶ勇気こそが、本当の変化の始まりだ。」
+episode_room_fail_phrase_content_sleep	룸 에피소드 자고있을 때 실패 명언 텍스트	잘못은 숨기려 할수록 더 크게 드러난다.\n인정하고 배우는 용기가 진짜 변화의 시작이다.	The more you try to hide your mistakes,\nthe more they will be exposed.\nThe courage to admit and learn is\nthe true beginning of change.	「間違いを隠そうとすればするほど、\nそれは大きく明らかになる。\n認めて学ぶ勇気こそが、本当の変化の始まりだ。」
 episode_room_fail_phrase_auth_sleep	룸 에피소드 자고있을 때 실패 명언 저자	Serena Vale	Serena Vale	Serena Vale
 episode_room_fail_girl_content_sleep	룸 에피소드 자고있을 때 실패 여자 대사	이 새끼가...?	What the hell...?	この野郎が...?
-episode_room_fail_phrase_content_awake	룸 에피소드 깼을 때 실패 명언 텍스트	들킨 잘못은 변명이 아니라 대가를 요구한다.	A mistake that’s been exposed demands a price, not an excuse.	ばれた過ちには言い訳ではなく、代償を求める。
+episode_room_fail_phrase_content_awake	룸 에피소드 깼을 때 실패 명언 텍스트	들킨 잘못은 변명이 아니라 대가를 요구한다.	A mistake that’s been exposed\ndemands a price, not an excuse.	「ばれた過ちには言い訳ではなく、代償を求める。」
 episode_room_fail_phrase_auth_awake	룸 에피소드 깼을 때 실패 명언 저자	Rowan Blake	Rowan Blake	Rowan Blake
 episode_room_fail_girl_content_awake	룸 에피소드 깼을 때 실패 여자 대사	너 뭐하냐...?	What are you doing...?	何してるの...?
 episode_room_success_phrase_content	룸 에피소드 성공 명언 텍스트	모르는 것이 때로는 약이 될 수도 있다.	Ignorance is bliss.	知らぬが仏

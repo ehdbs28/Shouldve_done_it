@@ -68,7 +68,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 479090aa841554a9bb5222a27c5e87d9, type: 3}
     m_FontSize: 23
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -263,9 +263,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae4cff41d1da24bae85231cf4060a330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiSoundName: 
   currentSituationData: {fileID: 0}
-  thumbnailImage: {fileID: 8306337881156036158}
-  titleText: {fileID: 4828801535753050628}
+  displayDelay: 0
 --- !u!225 &7396200421914118389
 CanvasGroup:
   m_ObjectHideFlags: 0
