@@ -1,4 +1,3 @@
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +39,8 @@ namespace Episode.Room
             if (MaleCharacter.IsDeletingTalk)
             {
                 //start talk
-                string value = Define.sDialogDictionary["roomBubbleWhat"];
+                // string value = Define.sDialogDictionary["roomBubbleWhat"];
+                string value = new LocalizeString("episode_room_fail_girl_content_awake");
                 ShowDeletingSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, false, value);
 
                 StartCoroutine(ShowDeleingEnding());
@@ -56,8 +56,12 @@ namespace Episode.Room
         {
             yield return new WaitForSeconds(2f);
 
-            string value = Define.sDialogDictionary["roomDeleing"];
-            Room.SetResult( value, "Serena Vale", false);
+            string keyBody = "episode_room_fail_phrase_{0}_awake";
+            Room.SetResult(
+                new LocalizeString(string.Format(keyBody, "content")), 
+                new LocalizeString(string.Format(keyBody, "auth")), 
+                false
+            );
         }
 
         public void StandUp()
@@ -74,11 +78,18 @@ namespace Episode.Room
 
         private IEnumerator CheckPhoneCo()
         {
-            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, "�� ���ϳ�...?");
+            string value = new LocalizeString("episode_room_fail_girl_content_sleep");
+            ShowPhoneSpeechBubble.Show(SpeechBubble.SpeechBubbleType.Text, true, value);
 
             yield return new WaitForSeconds(2f);
 
-            Room.SetResult("��Ų �߸��� ������ �ƴ� �밡�� �䱸�Ѵ�.", "Rowan Blake", false);
+            // Room.SetResult("��Ų �߸��� ������ �ƴ� �밡�� �䱸�Ѵ�.", "Rowan Blake", false);
+            string keyBody = "episode_room_fail_phrase_{0}_sleep";
+            Room.SetResult(
+                new LocalizeString(string.Format(keyBody, "content")), 
+                new LocalizeString(string.Format(keyBody, "auth")), 
+                false
+            );
         }
 
         public void OnStandUp()

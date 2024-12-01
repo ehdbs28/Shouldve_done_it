@@ -46,9 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   successDelay: 2
   interactTime: 3
-  failText: "\uBC1C\uBC11\uB3C4 \uC870\uC2EC\uD558\uB77C. \uC791\uC740 \uC2E4\uC218
-    \uD558\uB098\uAC00 \uD070 \uAE38\uC744 \uBC14\uAFC0 \uC218 \uC788\uB2E4."
-  failAuthor: Charles Harper
+  failText: episode_walk_fail_phrase_content_banana
+  failAuthor: episode_walk_fail_phrase_auth_banana
   waterPrefab: {fileID: 1870340760037572157, guid: e6972605a9bc04d2f94fb596752d2cde, type: 3}
 --- !u!1 &335561724962221812
 GameObject:
@@ -124,10 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -329,8 +328,7 @@ MonoBehaviour:
       m_Calls: []
   _camera: {fileID: 7314594269375151540}
   episodeData: {fileID: 11400000, guid: 8d47eda024b114795923da94a4d7026a, type: 2}
-  _title: "\uADF8\uB140\uC640\uC758 \uB9CC\uB0A8\uB3C4 \uC775\uC219\uD574\uC84C\uC744
-    \uBB34\uB835\n\uACF5\uC6D0\uC5D0\uC11C..."
+  _title: episode_walk_opening
   _titlePanelPrefab: {fileID: 5348039547804228864, guid: 7e230f93efb314f1fbd7877be814b370, type: 3}
   _quotesPanelPrefab: {fileID: 30319007619424376, guid: a1c37a89bc9b24600a60703e74c1dc9f, type: 3}
   maleParent: {fileID: 4800859751111088739}
@@ -391,10 +389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   successDelay: 5
   interactTime: 1
-  failText: "\uC704\uD5D8\uD55C \uC77C\uC740 \uC5B8\uC81C\uB098 \uCC3E\uC544\uC62C
-    \uC218 \uC788\uB2E4. \uC911\uC694\uD55C \uAC74 \uADF8 \uC21C\uAC04\uC744 \uB9C8\uC8FC\uD558\uB294
-    \uC6B0\uB9AC\uC758 \uC6A9\uAE30\uB2E4."
-  failAuthor: Daniel Croft
+  failText: episode_walk_fail_phrase_content_taipan
+  failAuthor: episode_walk_fail_phrase_auth_taipan
   taipanPrefab: {fileID: 191139712265525777, guid: 13529be2286c34b6890ac96210e837ef, type: 3}
 --- !u!1 &2358168179877711392
 GameObject:
@@ -642,6 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7400602068855439111}
   - component: {fileID: 2248889008483879205}
+  - component: {fileID: 3365655450716172208}
   - component: {fileID: 2218010190101753436}
   - component: {fileID: 285108215855720019}
   m_Layer: 0
@@ -678,6 +675,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3217178610678718215}
   m_CullTransparentMesh: 1
+--- !u!114 &3365655450716172208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3217178610678718215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b9b3402e549489886710e675b07f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_walk_tooltip_space
 --- !u!114 &2218010190101753436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,10 +1335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   successDelay: 1
   interactTime: 5
-  failText: "\uC9C0\uB098\uAC00\uB294 \uBC14\uB78C\uCC98\uB7FC \uC2A4\uCCD0\uAC00\uB294
-    \uC778\uC5F0, \uB108\uBB34 \uAC00\uAE4C\uC774 \uB2E4\uAC00\uC11C\uBA74 \uD718\uB9D0\uB9B4
-    \uC218\uB3C4 \uC788\uB2E4."
-  failAuthor: Alexander Graves
+  failText: episode_walk_fail_phrase_content_girl
+  failAuthor: episode_walk_fail_phrase_auth_girl
   girlPrefab: {fileID: 6019238490921591706, guid: 23da99e3b92e64808a862faf09b9440e, type: 3}
 --- !u!1 &7388759700193016310
 GameObject:

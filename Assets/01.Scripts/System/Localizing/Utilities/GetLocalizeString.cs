@@ -1,11 +1,11 @@
-public struct GetLocalizeString
+public struct LocalizeString
 {
     public string localizeString;
 
-    public GetLocalizeString(string localizeKey)
+    public LocalizeString(string localizeKey)
     {
         localizeString = LocalizeManager.Instance.GetLocalizeString(localizeKey);
     }
 
-    public static implicit operator string(GetLocalizeString left) => left.localizeString;
+    public static implicit operator string(LocalizeString left) => left.localizeString;
 }

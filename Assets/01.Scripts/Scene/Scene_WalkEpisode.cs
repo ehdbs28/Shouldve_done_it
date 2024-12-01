@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using OMG.Extensions;
@@ -93,7 +92,10 @@ public class Scene_WalkEpisode : EpisodeScene
                     _isMoving = false;
                     maleAnimator.SetBool(idleHash, true);
                     femaleAnimator.SetBool(idleHash, true);
-                    SetResult("고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.", "ChatGPT", true);
+                    // SetResult("고생은 쉽지 않았겠지만, 그 끝엔 반드시 성장이라는 선물이 기다리고 있다.", "ChatGPT", true);
+                    
+                    string keyBody = "episode_walk_complete_phrase";
+                    SetResult(new LocalizeString($"{keyBody}_content"), new LocalizeString($"{keyBody}_auth"), true);
                     break;
                 }
             }
@@ -124,7 +126,7 @@ public class Scene_WalkEpisode : EpisodeScene
         }
         else
         {
-            SetResult(_curEvent.failText, _curEvent.failAuthor, false);
+            SetResult(new LocalizeString(_curEvent.failText), new LocalizeString(_curEvent.failAuthor), false);
         }
     }
 

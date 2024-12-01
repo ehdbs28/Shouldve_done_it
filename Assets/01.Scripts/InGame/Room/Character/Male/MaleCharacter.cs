@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
@@ -16,7 +14,13 @@ namespace Episode.Room
 
         public void SuccessEnding()
         {
-            Room.SetResult("모르는 것이 때로는 약이 될 수도 있다.", "Adrian Frost", true);
+            // Room.SetResult("모르는 것이 때로는 약이 될 수도 있다.", "Adrian Frost", true);
+            string keyBody = "episode_room_success_phrase";
+            Room.SetResult(
+                new LocalizeString($"{keyBody}_content"),
+                new LocalizeString($"{keyBody}_auth"),
+                false
+            );
         }
     }
 }

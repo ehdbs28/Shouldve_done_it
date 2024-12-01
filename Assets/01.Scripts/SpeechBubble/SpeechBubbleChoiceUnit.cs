@@ -14,7 +14,7 @@ public class SpeechBubbleChoiceUnit : MonoBehaviourUI
     {
         _index = index;
         _info = info;
-        _text.text = info.text;
+        _text.text = info.LocalizeString;
         _callback = callback;
     }
     

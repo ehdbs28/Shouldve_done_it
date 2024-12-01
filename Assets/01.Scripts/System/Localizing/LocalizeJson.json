@@ -295,13 +295,13 @@
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch_bookshelf",
-    "Korean": "당신이 정신을 차릴 수 있도록 해주세요!",
+    "Korean": "당신이 정신을 차릴 수 있도록 하세요!",
     "English": "-",
     "Japanese": "-"
   },
   {
     "LocalizeKey": "episode_room_tooltip_touch_phone",
-    "Korean": "문제를 알아차리도록 하세요!",
+    "Korean": "당신이 문제를 알아차리도록 하세요!",
     "English": "-",
     "Japanese": "-"
   },

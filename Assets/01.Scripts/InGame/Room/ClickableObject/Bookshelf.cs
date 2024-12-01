@@ -3,6 +3,7 @@ using UnityEngine;
 using DG.Tweening;
 using System.Collections;
 using UnityEditor;
+using UnityEngine.UI;
 
 namespace Episode.Room
 {
@@ -15,6 +16,16 @@ namespace Episode.Room
         [SerializeField] private float ShakeDelay;
         [SerializeField] private Vector3 ShakeOffset;
         private bool IsShaked;
+
+        [Space]
+        [SerializeField] private Text tooltipText;
+
+        private void Start()
+        {
+            string body = new LocalizeString("episode_room_tooltip_touch");
+            string content = new LocalizeString("episode_room_tooltip_touch_bookshelf");
+            tooltipText.text = string.Format(body, content);
+        }
 
         protected override void OnMouseDown()
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace Episode.Room
 {
@@ -12,6 +13,9 @@ namespace Episode.Room
 
         [Space]
         public UnityEvent OnDeleteTalkEvent;
+        
+        [Space]
+        public Text tooltipText;
 
         private Vector2 OriginPos;
 
@@ -25,8 +29,14 @@ namespace Episode.Room
         public override void Show()
         {
             base.Show();
+            tooltipText.text = "";
 
-            Rect.DOAnchorPos(Vector2.zero, ShowTime).SetEase(Ease.OutBack);
+            Rect
+                .DOAnchorPos(Vector2.zero, ShowTime)
+                .SetEase(Ease.OutBack)
+                .OnComplete(() => {
+                    SetTooltipText();
+                });
         }
 
         public override void Hide()
@@ -37,6 +47,11 @@ namespace Episode.Room
         public void OnDelete()
         {
             OnDeleteTalkEvent?.Invoke();
+        }
+
+        private void SetTooltipText()
+        {
+            tooltipText.text = new LocalizeString("episode_room_tooltip_slide");
         }
     }
 }

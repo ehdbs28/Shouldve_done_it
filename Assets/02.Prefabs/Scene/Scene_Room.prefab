@@ -203,6 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3209065932876510484}
   - component: {fileID: 3931040957542495424}
+  - component: {fileID: 5852005396195432580}
   - component: {fileID: 3788653290983752267}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -238,6 +239,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352392956759709299}
   m_CullTransparentMesh: 1
+--- !u!114 &5852005396195432580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352392956759709299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_name_3
 --- !u!114 &3788653290983752267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7389161931860632800}
   - component: {fileID: 2925004425241686573}
+  - component: {fileID: 33350946617568916}
   - component: {fileID: 4527656399363987423}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -455,6 +470,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756989967813298489}
   m_CullTransparentMesh: 1
+--- !u!114 &33350946617568916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756989967813298489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_message_3
 --- !u!114 &4527656399363987423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6777554654461290013}
   - component: {fileID: 783365062751141491}
+  - component: {fileID: 3358146299695298445}
   - component: {fileID: 7903481438158981336}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -731,6 +760,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189028383326180722}
   m_CullTransparentMesh: 1
+--- !u!114 &3358146299695298445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189028383326180722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_message_4
 --- !u!114 &7903481438158981336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1223,6 +1265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406591448859075291}
   - component: {fileID: 1260311753526640136}
+  - component: {fileID: 1237120078108644383}
   - component: {fileID: 7365466261549985965}
   m_Layer: 0
   m_Name: Text (TMP) (1)
@@ -1258,6 +1301,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861867291658388750}
   m_CullTransparentMesh: 1
+--- !u!114 &1237120078108644383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861867291658388750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_temperature
 --- !u!114 &7365466261549985965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,10 +1525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2176,6 +2232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132486370717302262}
   - component: {fileID: 5243879456443113945}
+  - component: {fileID: 1832165223135316069}
   - component: {fileID: 2512330367908617800}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -2211,6 +2268,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3369769342669111846}
   m_CullTransparentMesh: 1
+--- !u!114 &1832165223135316069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3369769342669111846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_name_2
 --- !u!114 &2512330367908617800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2592,6 +2662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3309213161292452034}
   - component: {fileID: 9162089662582694641}
+  - component: {fileID: 647829155993348876}
   - component: {fileID: 1359986382646121137}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -2627,6 +2698,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4360308673304157175}
   m_CullTransparentMesh: 1
+--- !u!114 &647829155993348876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4360308673304157175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_weather
 --- !u!114 &1359986382646121137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2801,6 +2885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3963697996932427803}
   - component: {fileID: 5809785089196146374}
+  - component: {fileID: 5682918790882123775}
   - component: {fileID: 8561006663255338393}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -2836,6 +2921,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4723749828887060332}
   m_CullTransparentMesh: 1
+--- !u!114 &5682918790882123775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723749828887060332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_name_1
 --- !u!114 &8561006663255338393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,6 +3151,7 @@ Transform:
   - {fileID: 339069275098914434}
   - {fileID: 4713351886081834129}
   - {fileID: 5538855768123070931}
+  - {fileID: 2241865393514221760}
   - {fileID: 4330381871694652917}
   - {fileID: 109108696112738098}
   - {fileID: 2067470985166201082}
@@ -3080,7 +3179,7 @@ MonoBehaviour:
       m_Calls: []
   _camera: {fileID: 0}
   episodeData: {fileID: 11400000, guid: 493714d3743c04be2ace4ac47d532e9b, type: 2}
-  _title: "\uD504\uB85C\uD3EC\uC988\uB97C \uD558\uAE30 \uD558\uB8E8 \uC804, \uADF8\uB0A0..."
+  _title: episode_room_opening
   _titlePanelPrefab: {fileID: 4372533354834723338}
   _quotesPanelPrefab: {fileID: 5433269878124393909}
   FemaleWakeUpTimer: {fileID: 7670150610844878624}
@@ -3388,6 +3487,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  tooltipText: {fileID: 918097412203895801}
 --- !u!1 &6126867809276044790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,6 +3716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495606707059476078}
   - component: {fileID: 4548698051987504319}
+  - component: {fileID: 4185710215539190498}
   - component: {fileID: 2617998546373740188}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -3651,6 +3752,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6423505563454004946}
   m_CullTransparentMesh: 1
+--- !u!114 &4185710215539190498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423505563454004946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_message_2
 --- !u!114 &2617998546373740188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3740,6 +3854,102 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7067420197396212502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5108252748336652405}
+  - component: {fileID: 1296925579174519683}
+  - component: {fileID: 4113293642362426073}
+  - component: {fileID: 2605227958732899002}
+  m_Layer: 0
+  m_Name: GirlText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5108252748336652405
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067420197396212502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2241865393514221760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 145}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &1296925579174519683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067420197396212502}
+  m_CullTransparentMesh: 1
+--- !u!114 &4113293642362426073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067420197396212502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 479090aa841554a9bb5222a27c5e87d9, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 289
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.2
+  m_Text: "- \uC8FC\uBCC0 \uC0AC\uBB3C\uB4E4\uC744 \uD130\uCE58\uD574 \uC5EC\uC790\uCE5C\uAD6C\uAC00
+    \uAE68\uC9C0 \uC54A\uB3C4\uB85D \uD558\uC138\uC694! -"
+--- !u!114 &2605227958732899002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067420197396212502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7105605997896009332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,6 +4473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6123293211055574927}
   - component: {fileID: 1311762509901337442}
+  - component: {fileID: 4340251741589824781}
   - component: {fileID: 491202714266289702}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -4298,6 +4509,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8015316770481637015}
   m_CullTransparentMesh: 1
+--- !u!114 &4340251741589824781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8015316770481637015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_name_4
 --- !u!114 &491202714266289702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4397,6 +4621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 912960655397216776}
   - component: {fileID: 5284314341419069165}
+  - component: {fileID: 5767027132476966605}
   - component: {fileID: 3950248693654910257}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -4432,6 +4657,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8026563192976344086}
   m_CullTransparentMesh: 1
+--- !u!114 &5767027132476966605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026563192976344086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_talk_message_1
 --- !u!114 &3950248693654910257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4522,6 +4760,103 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8102269254046798479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5616641937170380958}
+  - component: {fileID: 2253119480497904247}
+  - component: {fileID: 918097412203895801}
+  - component: {fileID: 4551870565517231410}
+  m_Layer: 0
+  m_Name: ManText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5616641937170380958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8102269254046798479}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2241865393514221760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 210}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &2253119480497904247
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8102269254046798479}
+  m_CullTransparentMesh: 1
+--- !u!114 &918097412203895801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8102269254046798479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 479090aa841554a9bb5222a27c5e87d9, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 289
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.2
+  m_Text: "- \uC8FC\uBCC0 \uC0AC\uBB3C\uB4E4\uC744 \uD130\uCE58\uD574 \uB2F9\uC2E0\uC774
+    \uC815\uC2E0\uC744 \uCC28\uB9B4 \uC218 \uC788\uB3C4\uB85D \uD558\uC138\uC694!
+    -"
+--- !u!114 &4551870565517231410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8102269254046798479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8122057587212170709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,6 +4867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3931364932349808860}
   - component: {fileID: 7574158537212621668}
+  - component: {fileID: 3460268863565461308}
   - component: {fileID: 1536272887278598091}
   m_Layer: 0
   m_Name: Calendar
@@ -4567,6 +4903,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8122057587212170709}
   m_CullTransparentMesh: 1
+--- !u!114 &3460268863565461308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122057587212170709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec53904e94a14ffe9383a2eeebc9b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeKey: episode_room_phone_date
 --- !u!114 &1536272887278598091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4656,6 +5005,109 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8285669258338145778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2241865393514221760}
+  - component: {fileID: 1774650885421462640}
+  - component: {fileID: 1379074392130279534}
+  - component: {fileID: 4855201516598594406}
+  m_Layer: 0
+  m_Name: TooltipCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2241865393514221760
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285669258338145778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5616641937170380958}
+  - {fileID: 5108252748336652405}
+  m_Father: {fileID: 3777418615814088535}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &1774650885421462640
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285669258338145778}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1379074392130279534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285669258338145778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &4855201516598594406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285669258338145778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &8750519282858363012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,6 +7555,7 @@ MonoBehaviour:
   ShakeDuration: 0.25
   ShakeDelay: 0.03
   ShakeOffset: {x: 0.08, y: 0.08, z: 0}
+  tooltipText: {fileID: 918097412203895801}
 --- !u!4 &4802166837797474116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8251468957442690665, guid: 6628eb0ec3811408fb3d4048d2b8c126, type: 3}
@@ -7154,6 +7607,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Light: {fileID: 7985740116204707425}
+  tooltipText: {fileID: 4113293642362426073}
 --- !u!1001 &3504743783251821933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9394,6 +9848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OwnerCharacter: {fileID: 8570434374608361660}
+  tooltipText: {fileID: 918097412203895801}
 --- !u!1001 &5942103555283534334
 PrefabInstance:
   m_ObjectHideFlags: 0

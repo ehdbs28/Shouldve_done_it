@@ -16,6 +16,7 @@ public class SpeechBubble : MonoBehaviour
     {
         public string text;
         public bool answer;
+        public string LocalizeString => new LocalizeString(text);
     }
 
     public TextSpeech textSpeech;

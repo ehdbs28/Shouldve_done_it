@@ -17,6 +17,6 @@ public class LocalizeText_Legacy : MonoBehaviour
         if(text == null)
             return;
 
-        text.text = new GetLocalizeString(localizeKey);
+        text.text = new LocalizeString(localizeKey);
     }
 }
